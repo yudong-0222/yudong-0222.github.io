@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-11-05T13:59:26.282Z</updated>
+  <updated>2022-11-06T12:06:44.156Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[C++] toj 104 星星樹</title>
+    <link href="http://example.com/post/cpp2.html"/>
+    <id>http://example.com/post/cpp2.html</id>
+    <published>2022-11-06T11:34:14.169Z</published>
+    <updated>2022-11-06T12:06:44.156Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;toj-104-星星樹&quot;&gt;&lt;a href=&quot;#toj-104-星星樹&quot; class=&quot;headerlink&quot; title=&quot;toj 104 星星樹&quot;&gt;&lt;/a&gt;toj 104 星星樹&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="競程" scheme="http://example.com/categories/%E7%AB%B6%E7%A8%8B/"/>
+    
+    
+    <category term="code" scheme="http://example.com/tags/code/"/>
+    
+    <category term="練習" scheme="http://example.com/tags/%E7%B7%B4%E7%BF%92/"/>
+    
+    <category term="競程" scheme="http://example.com/tags/%E7%AB%B6%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[C++] 巢狀迴圈</title>
+    <link href="http://example.com/post/cpp.html"/>
+    <id>http://example.com/post/cpp.html</id>
+    <published>2022-11-05T17:01:01.000Z</published>
+    <updated>2022-11-06T11:44:03.448Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;巢狀迴圈&quot;&gt;&lt;a href=&quot;#巢狀迴圈&quot; class=&quot;headerlink&quot; title=&quot;巢狀迴圈&quot;&gt;&lt;/a&gt;巢狀迴圈&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;巢狀迴圈&lt;/strong&gt;  迴圈包覆著迴圈。&lt;/p&gt;
+&lt;p&gt;在解題時，我會將想法先列出來</summary>
+        
+      
+    
+    
+    
+    <category term="競程" scheme="http://example.com/categories/%E7%AB%B6%E7%A8%8B/"/>
+    
+    
+    <category term="code" scheme="http://example.com/tags/code/"/>
+    
+    <category term="練習" scheme="http://example.com/tags/%E7%B7%B4%E7%BF%92/"/>
+    
+    <category term="競程" scheme="http://example.com/tags/%E7%AB%B6%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>封面測試</title>
@@ -34,7 +93,7 @@
     <link href="http://example.com/post/1st.html"/>
     <id>http://example.com/post/1st.html</id>
     <published>2022-11-05T07:26:46.000Z</published>
-    <updated>2022-11-05T13:39:58.051Z</updated>
+    <updated>2022-11-06T11:49:32.955Z</updated>
     
     
       
