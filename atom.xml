@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-11-06T07:59:37.537Z</updated>
+  <updated>2022-11-05T13:59:26.282Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,23 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>[c++] 有關於巢狀迴圈</title>
-    <link href="http://example.com/post/cpp1.html"/>
-    <id>http://example.com/post/cpp1.html</id>
-    <published>2022-11-06T05:17:39.000Z</published>
-    <updated>2022-11-06T07:59:37.537Z</updated>
-    
-    
-    
-    
-    <category term="程式" scheme="http://example.com/categories/%E7%A8%8B%E5%BC%8F/"/>
-    
-    
-    <category term="coding" scheme="http://example.com/tags/coding/"/>
-    
-  </entry>
   
   <entry>
     <title>封面測試</title>
