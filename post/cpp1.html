@@ -317,14 +317,35 @@
   <div id="article" class="post-content-info">
     
 
-    <h1 id="巢狀迴圈的運用"><a href="#巢狀迴圈的運用" class="headerlink" title="巢狀迴圈的運用"></a>巢狀迴圈的運用</h1><p><strong>巢狀迴圈</strong> &#x3D;&#x3D; 很多個迴圈組合起來。<br><em>例如:</em></p>
-<p><em>範例輸入</em>&#96;</p>
+    <h1 id="巢狀迴圈的運用"><a href="#巢狀迴圈的運用" class="headerlink" title="巢狀迴圈的運用"></a>巢狀迴圈的運用</h1><p><strong>巢狀迴圈</strong> &#x3D; &#x3D; 很多個迴圈組合起來。<br>在解題時，可以先將想法列出來 再一個一個使用迴圈來解。<br>把作法想成[以一個迴圈處裡一件事情]的思考方法。</p>
+<h2 id="例如"><a href="#例如" class="headerlink" title="例如:"></a><em>例如:</em></h2><p><strong>範例輸入</strong></p>
 <blockquote>
-<p> 5<br><em>範例輸出</em><br>*<br>**</p>
-<hr>
-<hr>
-<hr>
+<p> 5  </p>
 </blockquote>
+<p><strong>範例輸出</strong></p>
+<blockquote>
+<p>$<br>$$<br>$$$<br>$$$$<br>$$$$$</p>
+</blockquote>
+<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法:"></a>思考方法:</h2><ol>
+<li>要做幾次 <strong>$</strong> ?</li>
+<li>要輸出幾個 <strong>$</strong> ?</li>
+<li>最後再輸出換行 “\n”</li>
+</ol>
+<h1 id="題解"><a href="#題解" class="headerlink" title="題解"></a>題解</h1><pre><code class="cpp">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main () &#123;
+    int n;
+    int i,j;
+    cin &gt;&gt; n;
+    for (i=1;i&lt;n;i++) &#123;
+        for (j=0;j&lt;i;j++) &#123;
+            cout &lt;&lt; &quot;$&quot;;
+        &#125;
+        cout &lt;&lt; &quot;\n&quot;;
+    &#125;
+&#125;
+</code></pre>
 
   </div>
   <div id="gitalk-container"></div>
