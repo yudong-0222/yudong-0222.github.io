@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>YuDong&#39;s Daily</title>
   <icon>http://example.com/icon.png</icon>
-  
+  <subtitle>a</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-11-06T12:25:09.577Z</updated>
+  <updated>2022-11-08T11:51:46.465Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,9 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[C++] 巢狀迴圈－三角形繪製２</title>
+    <link href="http://example.com/post/cpp3"/>
+    <id>http://example.com/post/cpp3</id>
+    <published>2022-11-08T11:19:10.000Z</published>
+    <updated>2022-11-08T11:51:46.465Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;題目&quot;&gt;&lt;a href=&quot;#題目&quot; class=&quot;headerlink&quot; title=&quot;題目:&quot;&gt;&lt;/a&gt;題目:&lt;/h1&gt;&lt;h4 id=&quot;出處：SA-流-C-競程修練心法&quot;&gt;&lt;a href=&quot;#出處：SA-流-C-競程修練心法&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="競程" scheme="http://example.com/categories/%E7%AB%B6%E7%A8%8B/"/>
+    
+    
+    <category term="code" scheme="http://example.com/tags/code/"/>
+    
+    <category term="練習" scheme="http://example.com/tags/%E7%B7%B4%E7%BF%92/"/>
+    
+    <category term="競程" scheme="http://example.com/tags/%E7%AB%B6%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>[C++] toj 104 星星樹</title>
-    <link href="http://example.com/post/cpp2.html"/>
-    <id>http://example.com/post/cpp2.html</id>
+    <link href="http://example.com/post/cpp2"/>
+    <id>http://example.com/post/cpp2</id>
     <published>2022-11-06T11:34:14.169Z</published>
     <updated>2022-11-06T12:25:09.577Z</updated>
     
@@ -46,11 +75,11 @@
   </entry>
   
   <entry>
-    <title>[C++] 巢狀迴圈</title>
-    <link href="http://example.com/post/cpp.html"/>
-    <id>http://example.com/post/cpp.html</id>
+    <title>[C++] 巢狀迴圈－三角形繪製１</title>
+    <link href="http://example.com/post/cpp"/>
+    <id>http://example.com/post/cpp</id>
     <published>2022-11-05T17:01:01.000Z</published>
-    <updated>2022-11-06T11:44:03.448Z</updated>
+    <updated>2022-11-08T11:22:32.332Z</updated>
     
     
       
@@ -77,8 +106,8 @@
   
   <entry>
     <title>封面測試</title>
-    <link href="http://example.com/post/cover.html"/>
-    <id>http://example.com/post/cover.html</id>
+    <link href="http://example.com/post/cover"/>
+    <id>http://example.com/post/cover</id>
     <published>2022-11-05T13:43:05.000Z</published>
     <updated>2022-11-06T12:24:44.781Z</updated>
     
@@ -90,8 +119,8 @@
   
   <entry>
     <title>第一篇文章 - Hello World</title>
-    <link href="http://example.com/post/1st.html"/>
-    <id>http://example.com/post/1st.html</id>
+    <link href="http://example.com/post/1st"/>
+    <id>http://example.com/post/1st</id>
     <published>2022-11-05T07:26:46.000Z</published>
     <updated>2022-11-06T11:49:32.955Z</updated>
     

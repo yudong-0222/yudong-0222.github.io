@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-<title>[C++] 巢狀迴圈-Daily</title>
+<title>[C++] toj 104 星星樹-Daily</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -294,7 +294,7 @@
             
         </ul>
         
-        <h1>[C++] 巢狀迴圈</h1>
+        <h1>[C++] toj 104 星星樹</h1>
         <div class="post-header-info">
             <div class="post-header-info-author">
                 
@@ -311,7 +311,7 @@
                          <a href="../../categories/競程/" target="_blank" >競程</a>
                     
                 </div>
-                <p>2022-11-06 01:01:01</p>
+                <p>2022-11-06 19:34:14</p>
             </div>
         </div>
     </div>
@@ -321,34 +321,55 @@
   <div id="article" class="post-content-info">
     
 
-    <h1 id="巢狀迴圈"><a href="#巢狀迴圈" class="headerlink" title="巢狀迴圈"></a>巢狀迴圈</h1><p><strong>巢狀迴圈</strong>  迴圈包覆著迴圈。</p>
-<p>在解題時，我會將想法先列出來 再一個一個去假設變數..or loop 等等。 </p>
-<h2 id="範例題目"><a href="#範例題目" class="headerlink" title="範例題目:"></a><em>範例題目:</em></h2><p><strong>範例輸入</strong></p>
+    <h1 id="toj-104-星星樹"><a href="#toj-104-星星樹" class="headerlink" title="toj 104 星星樹"></a>toj 104 星星樹</h1><p><a target="_blank" rel="noopener" href="https://toj.tfcis.org/oj/pro/104/">星星樹</a> 是這次我要練習的題目。<br>與巢狀迴圈有關。</p>
+<h2 id="題目"><a href="#題目" class="headerlink" title="題目:"></a>題目:</h2><p>大家都知道，星星是長在樹上的。星星樹，自然就是上面長了星星的樹。</p>
+<p>園丁JD3工作是專門維護長在資訊社社部的星星樹。工作包括每天澆水，拔雜草，防治蟲害（DEBUG）等等。當然，還有把星星樹定期修剪成整齊的形狀。</p>
+<p>星星樹的樹枝發展相當有規律，呈現層狀。一棵好看的星星樹並且從樹的底端開始，往上呈現整齊的圓錐狀。為了保持穩定不傾倒，每一層的星星會修剪的比下面一層少正好兩顆。星星樹最頂端，則總是最閃亮的，那一顆的星星。</p>
 <blockquote>
-<p> 5  </p>
+<p>輸入說明</p>
 </blockquote>
-<p><strong>範例輸出</strong></p>
+<p><code>一個數字N，代表星星樹的高度。</code></p>
 <blockquote>
-<p>$<br>$$<br>$$$<br>$$$$<br>$$$$$</p>
+<p>輸出說明</p>
 </blockquote>
-<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法:"></a>思考方法:</h2><ol>
-<li>要做幾次 ?</li>
-<li>要輸出幾個 <strong>$</strong> ?</li>
-<li>最後再輸出換行 “\n”</li>
-</ol>
-<h1 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h1><pre><code class="cpp">#include&lt;bits/stdc++.h&gt;
+<p><code>星星樹。</code></p>
+<blockquote>
+<p>範例輸入</p>
+</blockquote>
+<p><code>4</code></p>
+<blockquote>
+<p>範例輸出</p>
+</blockquote>
+<pre><code class="cpp">   *
+  ***
+ *****
+*******
+</code></pre>
+<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法"></a>思考方法</h2><p>首先，我將發生的事情寫下來，設了兩個變數: wall, space</p>
+<pre><code class="html">// 0 space 7 #
+// 1 space 5 #
+// 2 space 3 #
+// 3 space 1 #
+
+// space wall
+</code></pre>
+<p>再來，利用迴圈完成。<br>大概就出來了。</p>
+<pre><code class="cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
-int main () &#123;
-    int n;
-    int i,j;
-    cin &gt;&gt; n;
-    for (i=1;i&lt;n;i++) &#123;
-        for (j=0;j&lt;i;j++) &#123;
-            cout &lt;&lt; &quot;$&quot;;
-        &#125;
-        cout &lt;&lt; &quot;\n&quot;;
+int main() &#123;
+  int n;
+  cin &gt;&gt; n;
+  for (int i = 0; i &lt; n; i++) &#123; //大迴圈: 次數
+    for (int space = 1; space &lt; n-i; space++) &#123; //空白處理迴圈- 
+    //空白由上往下遞減.
+      cout &lt;&lt; &quot; &quot;;
     &#125;
+    for (int wall = 0; wall &lt; 2*i+1; wall++) &#123; //2*i+1 為奇數
+      cout &lt;&lt; &quot;*&quot;;
+    &#125;
+    cout &lt;&lt; &quot;\n&quot;;
+  &#125;
 &#125;
 </code></pre>
 
@@ -411,19 +432,19 @@ Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
 
     <div class="post-paging">
     
-    <a href="/post/cpp2.html">
+    <a href="/post/cpp3">
         <div class="post-paging-last">
             <span>上一篇</span>
-            <p>[C++] toj 104 星星樹</p>
+            <p>[C++] 巢狀迴圈－三角形繪製２</p>
         </div>
     </a>
     
 
     
-    <a href="/post/cover.html">
+    <a href="/post/cpp">
         <div class="post-paging-next">
             <span>下一篇</span>
-            <p>封面測試</p>
+            <p>[C++] 巢狀迴圈－三角形繪製１</p>
         </div>
     </a>
     

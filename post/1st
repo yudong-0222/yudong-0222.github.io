@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-<title>[C++] toj 104 星星樹-Daily</title>
+<title>第一篇文章 - Hello World-Daily</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,9 +11,8 @@
 <link rel="stylesheet" href="/css/index.css">
 
 
-
-<meta name="keywords" content="code,練習,競程,">
-<meta name="description" content="">
+<meta name="keywords" content="YuDong, YuDong-Code-Daily, YuDong-Daily">
+<meta name="description" content="69">
 
 
 <script src="/js/jquery.min.js"></script>
@@ -284,17 +283,9 @@
     <div class="post-header-background-content">
         <ul class="post-header-tag">
             
-            
-            <li><a href="/tags/code">code</a></li>
-            
-            <li><a href="/tags/練習">練習</a></li>
-            
-            <li><a href="/tags/競程">競程</a></li>
-            
-            
         </ul>
         
-        <h1>[C++] toj 104 星星樹</h1>
+        <h1>第一篇文章 - Hello World</h1>
         <div class="post-header-info">
             <div class="post-header-info-author">
                 
@@ -308,10 +299,10 @@
                 <span class="post-header-info-author-text"> <a href="../../about">YuDong</a></span>
                 <div class="post-header-info-author-categories">
                     
-                         <a href="../../categories/競程/" target="_blank" >競程</a>
+                         <a href="../../categories/初次/" target="_blank" >初次</a>
                     
                 </div>
-                <p>2022-11-06 19:34:14</p>
+                <p>2022-11-05 15:26:46</p>
             </div>
         </div>
     </div>
@@ -321,57 +312,19 @@
   <div id="article" class="post-content-info">
     
 
-    <h1 id="toj-104-星星樹"><a href="#toj-104-星星樹" class="headerlink" title="toj 104 星星樹"></a>toj 104 星星樹</h1><p><a target="_blank" rel="noopener" href="https://toj.tfcis.org/oj/pro/104/">星星樹</a> 是這次我要練習的題目。<br>與巢狀迴圈有關。</p>
-<h2 id="題目"><a href="#題目" class="headerlink" title="題目:"></a>題目:</h2><p>大家都知道，星星是長在樹上的。星星樹，自然就是上面長了星星的樹。</p>
-<p>園丁JD3工作是專門維護長在資訊社社部的星星樹。工作包括每天澆水，拔雜草，防治蟲害（DEBUG）等等。當然，還有把星星樹定期修剪成整齊的形狀。</p>
-<p>星星樹的樹枝發展相當有規律，呈現層狀。一棵好看的星星樹並且從樹的底端開始，往上呈現整齊的圓錐狀。為了保持穩定不傾倒，每一層的星星會修剪的比下面一層少正好兩顆。星星樹最頂端，則總是最閃亮的，那一顆的星星。</p>
-<blockquote>
-<p>輸入說明</p>
-</blockquote>
-<p><code>一個數字N，代表星星樹的高度。</code></p>
-<blockquote>
-<p>輸出說明</p>
-</blockquote>
-<p><code>星星樹。</code></p>
-<blockquote>
-<p>範例輸入</p>
-</blockquote>
-<p><code>4</code></p>
-<blockquote>
-<p>範例輸出</p>
-</blockquote>
-<pre><code class="cpp">   *
-  ***
- *****
-*******
-</code></pre>
-<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法"></a>思考方法</h2><p>首先，我將發生的事情寫下來，設了兩個變數: wall, space</p>
-<pre><code class="html">// 0 space 7 #
-// 1 space 5 #
-// 2 space 3 #
-// 3 space 1 #
-
-// space wall
-</code></pre>
-<p>再來，利用迴圈完成。<br>大概就出來了。</p>
-<pre><code class="cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-
-int main() &#123;
-  int n;
-  cin &gt;&gt; n;
-  for (int i = 0; i &lt; n; i++) &#123; //大迴圈: 次數
-    for (int space = 1; space &lt; n-i; space++) &#123; //空白處理迴圈- 
-    //空白由上往下遞減.
-      cout &lt;&lt; &quot; &quot;;
-    &#125;
-    for (int wall = 0; wall &lt; 2*i+1; wall++) &#123; //2*i+1 為奇數
-      cout &lt;&lt; &quot;*&quot;;
-    &#125;
-    cout &lt;&lt; &quot;\n&quot;;
-  &#125;
-&#125;
-</code></pre>
+    <h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><p> <strong>這裡是用Hexo前端技術架設!</strong></p>
+<h2 id="未來更新重點"><a href="#未來更新重點" class="headerlink" title="未來更新重點:"></a>未來更新重點:</h2><ol>
+<li>支援英語。</li>
+</ol>
+<h2 id="hexo框架特點"><a href="#hexo框架特點" class="headerlink" title="hexo框架特點:"></a>hexo框架特點:</h2><ul>
+<li>你可以使用MARKDOWN 語法來寫!</li>
+</ul>
+<ul>
+<li>編輯快速 使用node.js</li>
+<li>可以與Github Pages heroku…等 部屬網站。</li>
+<li>豐富的外掛系統</li>
+</ul>
+<h4 id="之後我會在這邊發布一些我競程學習的東西-也歡迎大家一起交流"><a href="#之後我會在這邊發布一些我競程學習的東西-也歡迎大家一起交流" class="headerlink" title="之後我會在這邊發布一些我競程學習的東西~ 也歡迎大家一起交流"></a>之後我會在這邊發布一些我競程學習的東西~ 也歡迎大家一起交流</h4><h2 id="其他頁面"><a href="#其他頁面" class="headerlink" title="其他頁面:"></a>其他頁面:</h2><p><strong>你可以按上面的按鈕導航(手機則為</strong> <em>三條線</em> <strong>)，看看一些不一樣的東西</strong></p>
 
   </div>
   <div id="gitalk-container"></div>
@@ -432,14 +385,14 @@ Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
 
     <div class="post-paging">
     
-
-    
-    <a href="/post/cpp.html">
-        <div class="post-paging-next">
-            <span>下一篇</span>
-            <p>[C++] 巢狀迴圈</p>
+    <a href="/post/cover">
+        <div class="post-paging-last">
+            <span>上一篇</span>
+            <p>封面測試</p>
         </div>
     </a>
+    
+
     
 </div>
 </div>

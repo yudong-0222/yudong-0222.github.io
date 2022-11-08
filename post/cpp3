@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-<title>分類-Daily</title>
+<title>[C++] 巢狀迴圈－三角形繪製２-Daily</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,8 +11,9 @@
 <link rel="stylesheet" href="/css/index.css">
 
 
-<meta name="keywords" content="YuDong, YuDong-Code-Daily, YuDong-Daily">
-<meta name="description" content="69">
+
+<meta name="keywords" content="code,練習,競程,">
+<meta name="description" content="">
 
 
 <script src="/js/jquery.min.js"></script>
@@ -68,13 +69,13 @@
 								
 									
 						
-							<li class="select">
-								<a href="/categories">
-									分類-CATGORIES
-								</a>
-								<span class="dot"></span>
-							</li>
-							
+								<li>
+									<a href="/categories">
+										分類-CATGORIES
+									</a>
+									<span class="dot"></span>
+								</li>
+								
 									
 						
 								<li>
@@ -276,46 +277,194 @@
 
 </script>
 
-
-<div class="categories">
-    <div class="header-body-background">
-    <div class="header-body-background-content">
-        <span>
-            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgblogmyCategory.svg" alt="Quiet">
-        </span>
-
-        <h2>／  文章分類 ／</h2>
-    </div>
-</div>
-    <div class="categories-content" id="content">
-        <div class="categories-content-data">
-				<div class="categories-class">
-					
-						<a class="categories-class-card" href="/categories/%E5%88%9D%E6%AC%A1/"
-							style="background-image: url('https://api.ixiaowai.cn/gqapi/gqapi.php');"
-						>
-							<span class="categories-class-card-title">初次</span>
-							<div class="categories-class-card-number">
-								<span>
-									<span class="categories-length">1</span> 篇
-								</span>
-							</div>
-						</a>
-					
-						<a class="categories-class-card" href="/categories/%E7%AB%B6%E7%A8%8B/"
-							style="background-image: url('https://api.ixiaowai.cn/gqapi/gqapi.php');"
-						>
-							<span class="categories-class-card-title">競程</span>
-							<div class="categories-class-card-number">
-								<span>
-									<span class="categories-length">3</span> 篇
-								</span>
-							</div>
-						</a>
-					
-				</div>
+<div class="post">
+    <div class="post-header-background post-header-img"
+    style="background: url('https://api.ixiaowai.cn/gqapi/gqapi.php')" 
+>
+    <div class="post-header-background-content">
+        <ul class="post-header-tag">
+            
+            
+            <li><a href="/tags/code">code</a></li>
+            
+            <li><a href="/tags/練習">練習</a></li>
+            
+            <li><a href="/tags/競程">競程</a></li>
+            
+            
+        </ul>
+        
+        <h1>[C++] 巢狀迴圈－三角形繪製２</h1>
+        <div class="post-header-info">
+            <div class="post-header-info-author">
+                
+                    <svg t="1604839279282" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="2901" width="20" height="20">
+                        <path
+                            d="M513 956.3c-247.7 0-448-200.3-448-448S265.3 66.2 513 66.2s448 200.3 448 448-200.3 442.1-448 442.1z m0-830.9c-212.2 0-388.8 170.7-388.8 388.8C124.2 726.3 294.9 903 513 903c212.2 0 388.8-170.7 388.8-388.8S725.2 125.4 513 125.4z m0 430.2c-94.2 0-170.7-76.5-170.7-170.7S418.8 207.8 513 207.8s170.7 76.5 170.7 170.7S607.2 555.6 513 555.6z m0-289.1c-64.6 0-112 52.8-112 112s47.4 117.9 112 117.9 112-52.8 112-112-47.4-117.9-112-117.9z m0 689.8c-135.7 0-259-58.7-341.9-158.9l-11.8-17.8 11.8-17.8c76.5-117.9 206.2-188.5 347.8-188.5 135.7 0 265 64.6 341.9 182.6l11.8 17.8-11.8 17.8C778 897.1 648.7 956.3 513 956.3zM230.3 773.2C300.9 849.7 406.9 897 513 897c112 0 218.1-47.4 288.6-129.8-70.5-88.2-170.7-135.6-282.7-135.6s-218.1 53.3-288.6 141.6z"
+                            p-id="2902" fill="#ffffff"></path>
+                    </svg>
+                    
+                <span class="post-header-info-author-text"> <a href="../../about">YuDong</a></span>
+                <div class="post-header-info-author-categories">
+                    
+                         <a href="../../categories/競程/" target="_blank" >競程</a>
+                    
+                </div>
+                <p>2022-11-08 19:19:10</p>
+            </div>
         </div>
     </div>
+</div>
+    <div class="post-content" id="content">
+  
+  <div id="article" class="post-content-info">
+    
+
+    <h1 id="題目"><a href="#題目" class="headerlink" title="題目:"></a>題目:</h1><h4 id="出處：SA-流-C-競程修練心法"><a href="#出處：SA-流-C-競程修練心法" class="headerlink" title="出處：SA 流 C++ 競程修練心法"></a>出處：<a target="_blank" rel="noopener" href="https://hackmd.io/@sa072686/cp/%2F%40sa072686%2FrJpY0i7PS">SA 流 C++ 競程修練心法</a></h4><p><img src="/%5Cimage%5Ctango.png"></p>
+<h2 id="思考方法："><a href="#思考方法：" class="headerlink" title="思考方法："></a>思考方法：</h2><p>我先以 <code>輸出3個#</code> 為例子，下去推想。</p>
+<blockquote>
+<p>輸出 1 個 #<br>輸出 2 個 #<br>輸出 3 個 #<br>輸出 2 個 #<br>輸出 1 個 #</p>
+</blockquote>
+<p>分成 <code>兩層來輸出</code> 的話 則：</p>
+<h4 id="第一層"><a href="#第一層" class="headerlink" title="第一層"></a>第一層</h4><blockquote>
+<p>輸出 １ 個 #<br>輸出 ２ 個 #<br>輸出 ３ 個 #</p>
+</blockquote>
+<h4 id="第二層"><a href="#第二層" class="headerlink" title="第二層"></a>第二層</h4><blockquote>
+<p>輸出 ２ 個 #<br>輸出 １ 個 #</p>
+</blockquote>
+<h4 id="再來假設環節，"><a href="#再來假設環節，" class="headerlink" title="再來假設環節，"></a>再來假設環節，</h4><p>要做n次，所以 <code>第一層的迴圈</code> 即為 <strong>遞增</strong>：</p>
+<pre><code class="c++">    for (i=1;i&lt;=n;i++&gt;) &#123;
+        //進來迴圈 → 輸出i個 # → 輸出換行
+    &#125;
+</code></pre>
+<p>再來，是 # 的部分<br>所以：</p>
+<pre><code class="cpp">    for(j=0;j&lt;i;j++&gt;) &#123;
+        cout &lt;&lt; &quot;#&quot;;
+    &#125;
+</code></pre>
+<h4 id="合體，第一層就完成了！"><a href="#合體，第一層就完成了！" class="headerlink" title="合體，第一層就完成了！"></a>合體，第一層就完成了！</h4><pre><code class="cpp">    for (i=1;i&lt;=n;i++&gt;) &#123;
+        for (j=0;j&lt;i;j++&gt;) &#123;
+            cout &lt;&lt; &quot;#&quot;;
+        &#125;
+        cout &lt;&lt; &quot;\n&quot; ;
+    &#125;
+</code></pre>
+<p>而當我們達到 <code>輸出 n 次</code> 的 # 時<br>我們要倒回去 ， 即為 <strong>遞減</strong></p>
+<pre><code class="cpp">    for (i=n;i&gt;0;i--) &#123;
+        // 進入迴圈 → 輸出(n-1)個 → 輸出換行
+        cout &lt;&lt; &quot;\n&quot;;
+    &#125;
+</code></pre>
+<p>接著處理 <code>輸出 (n-1) 個 #</code></p>
+<pre><code class="cpp">    for (j=0;j&lt;i;j++&gt;) &#123;
+        cout &lt;&lt; &quot;#&quot;;
+    &#125;
+</code></pre>
+<h4 id="合體！"><a href="#合體！" class="headerlink" title="合體！"></a>合體！</h4><pre><code class="cpp">    for (i=n;i&gt;0;i--) &#123;
+        for (j=0;j&lt;i;j++&gt;) &#123;
+            cout &lt;&lt; &quot;#&quot;;
+        &#125;
+        cout &lt;&lt; &quot;\n&quot;;
+    &#125;
+</code></pre>
+<h3 id="將第一層與第二層合併"><a href="#將第一層與第二層合併" class="headerlink" title="將第一層與第二層合併"></a>將第一層與第二層合併</h3><h2 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h2><pre><code class="cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main() &#123;
+  int n;
+  int i, j;
+  cin &gt;&gt; n;
+  for (i = 1; i &lt;= n; i++) &#123;
+    for (j = 0; j &lt; ij; j++) &#123;
+      cout &lt;&lt; &quot;#&quot;;
+    &#125;
+    cout &lt;&lt; &quot;\n&quot;;
+  &#125;
+  for (i = n; i &gt; 0; i--) &#123;
+    for (j = 0; j &lt; i; j++) &#123;
+      cout &lt;&lt; &quot;#&quot;;
+    &#125;
+    cout &lt;&lt; &quot;\n&quot;;
+  &#125;
+  return 0;
+&#125;
+</code></pre>
+<h2 id="解題心得"><a href="#解題心得" class="headerlink" title="解題心得"></a>解題心得</h2><ul>
+<li>我剛開始解這題，一直把它侷限在用一個大迴圈包數個小迴圈的巢狀結構去解。沒想到換個思路後，解起來比較輕鬆。<br>不要太過於執著一把幹到底</li>
+<li>對於<code>巢狀迴圈</code>有更多的了解了！</li>
+<li>我解題會把迴圈拆的一個步驟一個迴圈去想，一次處裡多個迴圈我腦子會炸！</li>
+</ul>
+
+  </div>
+  <div id="gitalk-container"></div>
+</div>
+
+<script>
+  
+Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
+  dragToClose: true,
+  Toolbar: true,
+  closeButton: "top",
+  Image: {
+    zoom: true,
+  },
+  on: {
+    initCarousel: (fancybox) => {
+      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+    "Carousel.change": (fancybox, carousel, to, from) => {
+      const slide = carousel.slides[to];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+  },
+});
+</script>
+
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 9999;
+        /* width: 600px !important; */
+        min-width: 0%;
+        max-width: 90%;
+        max-height: 80%;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
+
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            max-width: 88%
+        }
+    }
+</style>
+
+    <div class="post-paging">
+    
+
+    
+    <a href="/post/cpp2">
+        <div class="post-paging-next">
+            <span>下一篇</span>
+            <p>[C++] toj 104 星星樹</p>
+        </div>
+    </a>
+    
+</div>
 </div>
 		
 <div class="footer">

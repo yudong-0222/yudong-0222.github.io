@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-<title>第一篇文章 - Hello World-Daily</title>
+<title>封面測試-Daily</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,8 +11,8 @@
 <link rel="stylesheet" href="/css/index.css">
 
 
-<meta name="keywords" content="YuDong">
-<meta name="description" content="描述">
+<meta name="keywords" content="YuDong, YuDong-Code-Daily, YuDong-Daily">
+<meta name="description" content="69">
 
 
 <script src="/js/jquery.min.js"></script>
@@ -285,7 +285,7 @@
             
         </ul>
         
-        <h1>第一篇文章 - Hello World</h1>
+        <h1>封面測試</h1>
         <div class="post-header-info">
             <div class="post-header-info-author">
                 
@@ -299,10 +299,8 @@
                 <span class="post-header-info-author-text"> <a href="../../about">YuDong</a></span>
                 <div class="post-header-info-author-categories">
                     
-                         <a href="../../categories/初次/" target="_blank" >初次</a>
-                    
                 </div>
-                <p>2022-11-05 15:26:46</p>
+                <p>2022-11-05 21:43:05</p>
             </div>
         </div>
     </div>
@@ -312,22 +310,9 @@
   <div id="article" class="post-content-info">
     
 
-    <h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><p> <strong>這裡是用Hexo前端技術架設!</strong></p>
-<h2 id="未來更新重點"><a href="#未來更新重點" class="headerlink" title="未來更新重點:"></a>未來更新重點:</h2><ol>
-<li>支援英語。</li>
-</ol>
-<h2 id="hexo框架特點"><a href="#hexo框架特點" class="headerlink" title="hexo框架特點:"></a>hexo框架特點:</h2><ul>
-<li>你可以使用MARKDOWN 語法來寫!</li>
-</ul>
-<ul>
-<li>編輯快速 使用node.js</li>
-<li>可以與Github Pages heroku…等 部屬網站。</li>
-<li>豐富的外掛系統</li>
-</ul>
-<h4 id="之後我會在這邊發布一些我競程學習的東西-也歡迎大家一起交流"><a href="#之後我會在這邊發布一些我競程學習的東西-也歡迎大家一起交流" class="headerlink" title="之後我會在這邊發布一些我競程學習的東西~ 也歡迎大家一起交流"></a>之後我會在這邊發布一些我競程學習的東西~ 也歡迎大家一起交流</h4><h2 id="其他頁面"><a href="#其他頁面" class="headerlink" title="其他頁面:"></a>其他頁面:</h2><p><strong>你可以按上面的按鈕導航(手機則為</strong> <em>三條線</em> <strong>)，看看一些不一樣的東西</strong></p>
-
+    
   </div>
-  <div id="gitalk-container"></div>
+  <div id=""></div>
 </div>
 
 <script>
@@ -385,14 +370,21 @@ Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
 
     <div class="post-paging">
     
-    <a href="/post/cover.html">
+    <a href="/post/cpp">
         <div class="post-paging-last">
             <span>上一篇</span>
-            <p>封面測試</p>
+            <p>[C++] 巢狀迴圈－三角形繪製１</p>
         </div>
     </a>
     
 
+    
+    <a href="/post/1st">
+        <div class="post-paging-next">
+            <span>下一篇</span>
+            <p>第一篇文章 - Hello World</p>
+        </div>
+    </a>
     
 </div>
 </div>
@@ -496,7 +488,7 @@ Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
             distractionFreeMode:false
         })
         
-        if(Boolean('true')){
+        if(Boolean('false')){
             gitalk.render('gitalk-container')
         }
     </script>
