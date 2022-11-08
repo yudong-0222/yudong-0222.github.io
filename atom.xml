@@ -105,19 +105,6 @@
   </entry>
   
   <entry>
-    <title>封面測試</title>
-    <link href="http://example.com/post/cover"/>
-    <id>http://example.com/post/cover</id>
-    <published>2022-11-05T13:43:05.000Z</published>
-    <updated>2022-11-06T12:24:44.781Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>第一篇文章 - Hello World</title>
     <link href="http://example.com/post/1st"/>
     <id>http://example.com/post/1st</id>
