@@ -19,49 +19,6 @@
       </categories>
   </entry>
   <entry>
-    <title>[C++] 巢狀迴圈－三角形繪製１</title>
-    <url>/post/cpp.html</url>
-    <content><![CDATA[<h1 id="巢狀迴圈"><a href="#巢狀迴圈" class="headerlink" title="巢狀迴圈"></a>巢狀迴圈</h1><p><strong>巢狀迴圈</strong>  迴圈包覆著迴圈。</p>
-<p>在解題時，我會將想法先列出來 再一個一個去假設變數..or loop 等等。 </p>
-<h2 id="範例題目"><a href="#範例題目" class="headerlink" title="範例題目:"></a><em>範例題目:</em></h2><p><strong>範例輸入</strong></p>
-<blockquote>
-<p> 5  </p>
-</blockquote>
-<p><strong>範例輸出</strong></p>
-<blockquote>
-<p>$<br>$$<br>$$$<br>$$$$<br>$$$$$</p>
-</blockquote>
-<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法:"></a>思考方法:</h2><ol>
-<li>要做幾次 ?</li>
-<li>要輸出幾個 <strong>$</strong> ?</li>
-<li>最後再輸出換行 “\n”</li>
-</ol>
-<h1 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h1><pre><code class="cpp">#include&lt;bits/stdc++.h&gt;
-using namespace std;
-
-int main () &#123;
-    int n;
-    int i,j;
-    cin &gt;&gt; n;
-    for (i=1;i&lt;n;i++) &#123;
-        for (j=0;j&lt;i;j++) &#123;
-            cout &lt;&lt; &quot;$&quot;;
-        &#125;
-        cout &lt;&lt; &quot;\n&quot;;
-    &#125;
-&#125;
-</code></pre>
-]]></content>
-      <categories>
-        <category>競程</category>
-      </categories>
-      <tags>
-        <tag>code</tag>
-        <tag>練習</tag>
-        <tag>競程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[C++] 巢狀迴圈－三角形繪製２</title>
     <url>/post/cpp3.html</url>
     <content><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目:"></a>題目:</h1><h4 id="出處：SA-流-C-競程修練心法"><a href="#出處：SA-流-C-競程修練心法" class="headerlink" title="出處：SA 流 C++ 競程修練心法"></a>出處：<a class="link"   href="https://hackmd.io/@sa072686/cp/%2F%40sa072686%2FrJpY0i7PS" >SA 流 C++ 競程修練心法<i class="fas fa-external-link-alt"></i></a></h4><p><img  
@@ -205,6 +162,49 @@ int main() &#123;
     &#125;
     cout &lt;&lt; &quot;\n&quot;;
   &#125;
+&#125;
+</code></pre>
+]]></content>
+      <categories>
+        <category>競程</category>
+      </categories>
+      <tags>
+        <tag>code</tag>
+        <tag>練習</tag>
+        <tag>競程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[C++] 巢狀迴圈－三角形繪製１</title>
+    <url>/post/cpp.html</url>
+    <content><![CDATA[<h1 id="巢狀迴圈"><a href="#巢狀迴圈" class="headerlink" title="巢狀迴圈"></a>巢狀迴圈</h1><p><strong>巢狀迴圈</strong>  迴圈包覆著迴圈。</p>
+<p>在解題時，我會將想法先列出來 再一個一個去假設變數..or loop 等等。 </p>
+<h2 id="範例題目"><a href="#範例題目" class="headerlink" title="範例題目:"></a><em>範例題目:</em></h2><p><strong>範例輸入</strong></p>
+<blockquote>
+<p> 5  </p>
+</blockquote>
+<p><strong>範例輸出</strong></p>
+<blockquote>
+<p>$<br>$$<br>$$$<br>$$$$<br>$$$$$</p>
+</blockquote>
+<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法:"></a>思考方法:</h2><ol>
+<li>要做幾次 ?</li>
+<li>要輸出幾個 <strong>$</strong> ?</li>
+<li>最後再輸出換行 “\n”</li>
+</ol>
+<h1 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h1><pre><code class="cpp">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main () &#123;
+    int n;
+    int i,j;
+    cin &gt;&gt; n;
+    for (i=1;i&lt;n;i++) &#123;
+        for (j=0;j&lt;i;j++) &#123;
+            cout &lt;&lt; &quot;$&quot;;
+        &#125;
+        cout &lt;&lt; &quot;\n&quot;;
+    &#125;
 &#125;
 </code></pre>
 ]]></content>
