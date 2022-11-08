@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-11-08T11:51:46.465Z</updated>
+  <updated>2022-11-08T12:13:54.952Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>[C++] 巢狀迴圈－三角形繪製２</title>
-    <link href="http://example.com/post/cpp3.html"/>
-    <id>http://example.com/post/cpp3.html</id>
+    <title>[C++] 巢狀迴圈－三角形繪製２000</title>
+    <link href="http://example.com/post/cpp3"/>
+    <id>http://example.com/post/cpp3</id>
     <published>2022-11-08T11:19:10.000Z</published>
-    <updated>2022-11-08T11:51:46.465Z</updated>
+    <updated>2022-11-08T12:13:54.952Z</updated>
     
     
       
@@ -47,8 +47,8 @@
   
   <entry>
     <title>[C++] toj 104 星星樹</title>
-    <link href="http://example.com/post/cpp2.html"/>
-    <id>http://example.com/post/cpp2.html</id>
+    <link href="http://example.com/post/cpp2"/>
+    <id>http://example.com/post/cpp2</id>
     <published>2022-11-06T11:34:14.169Z</published>
     <updated>2022-11-06T12:25:09.577Z</updated>
     
@@ -76,8 +76,8 @@
   
   <entry>
     <title>[C++] 巢狀迴圈－三角形繪製１</title>
-    <link href="http://example.com/post/cpp.html"/>
-    <id>http://example.com/post/cpp.html</id>
+    <link href="http://example.com/post/cpp"/>
+    <id>http://example.com/post/cpp</id>
     <published>2022-11-05T17:01:01.000Z</published>
     <updated>2022-11-08T11:22:32.332Z</updated>
     
@@ -106,8 +106,8 @@
   
   <entry>
     <title>封面測試</title>
-    <link href="http://example.com/post/cover.html"/>
-    <id>http://example.com/post/cover.html</id>
+    <link href="http://example.com/post/cover"/>
+    <id>http://example.com/post/cover</id>
     <published>2022-11-05T13:43:05.000Z</published>
     <updated>2022-11-06T12:24:44.781Z</updated>
     
@@ -119,8 +119,8 @@
   
   <entry>
     <title>第一篇文章 - Hello World</title>
-    <link href="http://example.com/post/1st.html"/>
-    <id>http://example.com/post/1st.html</id>
+    <link href="http://example.com/post/1st"/>
+    <id>http://example.com/post/1st</id>
     <published>2022-11-05T07:26:46.000Z</published>
     <updated>2022-11-06T11:49:32.955Z</updated>
     
