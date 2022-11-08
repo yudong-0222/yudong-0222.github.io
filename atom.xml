@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-11-08T12:13:54.952Z</updated>
+  <updated>2022-11-08T12:16:37.168Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>[C++] 巢狀迴圈－三角形繪製２000</title>
+    <title>[C++] 巢狀迴圈－三角形繪製２020</title>
     <link href="http://example.com/post/cpp3"/>
     <id>http://example.com/post/cpp3</id>
     <published>2022-11-08T11:19:10.000Z</published>
-    <updated>2022-11-08T12:13:54.952Z</updated>
+    <updated>2022-11-08T12:16:37.168Z</updated>
     
     
       
