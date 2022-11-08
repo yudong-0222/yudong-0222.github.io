@@ -1,506 +1,715 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		
-<title>YuDong-Daily</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" type="image/x-icon" href="/image/icon32.ico">
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="YuDong, YuDong-Code-Daily, YuDong-Daily">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="YuDong">
+    
+    <title>
+        
+        YuDong Daily
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
 
-<link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/images/icon95.png">
+    
+<link rel="stylesheet" href="/css/fontawesome.min.css">
 
-
-<meta name="keywords" content="YuDong, YuDong-Code-Daily, YuDong-Daily">
-<meta name="description" content="69">
-
-
-<script src="/js/jquery.min.js"></script>
-
-
-<script src="/js/index.js"></script>
-
-
-<script src="/js/fancybox.umd.js"></script>
-
-
-<script src="/js/fancybox-images.js"></script>
-
-
-<script src="/js/gitalk.min.js"></script>
-
-
-<script src="/js/hljs.min.js"></script>
- 
-<script>hljs.highlightAll();</script>
-
-	<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="YuDong's Daily" type="application/atom+xml">
+    <link href="/css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/regular.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/v5-font-face.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/duotone.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/brands.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/solid.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//evan.beee.top/css/waline.css"/>
+    <script src="//evan.beee.top/js/waline.js"></script>
+    <link href='/css/css2.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"zh-TW","path":"search.xml"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/icon.png","favicon":"/images/icon95.png","article_img_align":"center","left_side_width":"240px","content_max_width":"960px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bac.svg","description":"／ 在城市中學習程式的一切 ／"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"0.3.0"};
+    REDEFINE.language_ago = {"second":"%s 秒前","minute":"%s 分鐘前","hour":"%s 小時前","day":"%s 天前","week":"%s 周前","month":"%s 個月前","year":"%s 年前"};
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="YuDong's Daily" type="application/atom+xml">
 </head>
 
-	<body>
-		
-	<div class="header">
-		<div class="header-top" id="header-top">
-			<div class="h-left">
-				<a href="/">
-					<img src="/image/icon95.png" alt="Quiet">
-				</a>
-			</div>
-			<div class="h-right">
-				<ul>
-					
-						
-							<li class="select">
-								<a href="/">
-									主頁-HOME
-								</a>
-								<span class="dot"></span>
-							</li>
-							
-									
-						
-								<li>
-									<a href="/archives">
-										文章列表-ARCHIVE
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/categories">
-										分類-CATGORIES
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/tags">
-										標籤-TAGS
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/links">
-										連結-LINKS
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/about">
-										關於我-ABOUT
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-				</ul>
-			</div>
-			<div class="h-right-close">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-					<path fill="none" d="M0 0h24v24H0z" />
-					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
-				</svg>
-			</div>
-		</div>
-	</div>
-	<div class="sidebar">
-    <div class="topo">
-        <h2>YuDong</h2>
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fas fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+        <div class="first-screen-container flex-center fade-in-down-animation">
+    <div class="content flex-center">
+        <div class="description">
+          ／ 在城市中學習程式的一切 ／
+        </div>
+        
+            <div class="s-icon-list">
+                
+                    
+                        
+                            <span class="s-icon-item github">
+                                <a target="_blank" href="https://github.com/yudong-0222">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+                    
+                        
+                            <span class="s-icon-item instagram">
+                                <a target="_blank" href="https://instagram.com/yuddong.jar# your Instagram URL">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <span class="s-icon-item email">
+                                <a href="mailto:yuchi9716@gmail.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+                    
+                        
+                            <span class="s-icon-item discord">
+                                <a target="_blank" href="YuDong#1779">
+                                    <i class="fab fa-discord"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+            </div>
+        
     </div>
-    <ul>
+</div>
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+    
+    <div class="header-content has-first-screen">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/icon.png">
+                </a>
+            
+            <a class="logo-title" href="/">
+                YuDong Daily
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class="active"
+                               href="/"
+                            >
+                                首頁
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                歸檔
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                連結
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                關於
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分類
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="active"
+                       href="/">首頁</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">歸檔</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">連結</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">關於</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分類</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="home-content-container fade-in-down-animation">
+    <ul class="home-article-list">
         
-        <li>
-            <a href="/">主頁-HOME</a>
-        </li>
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/post/cpp3">
+                        [C++] 巢狀迴圈－三角形繪製２
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        題目:出處：SA 流 C++ 競程修練心法
+思考方法：我先以 輸出3個# 為例子，下去推想。
+
+輸出 1 個 #輸出 2 個 #輸出 3 個 #輸出 2 個 #輸出 1 個 #
+
+分成 兩層來輸出 的話 則：
+第一層
+輸出 １ 個 #輸出 ２ 個 #...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Nov 08 2022 19:19:10 GMT+0800">2022-11-08</span></span>
         
-        <li>
-            <a href="/archives">文章列表-ARCHIVE</a>
-        </li>
+            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/%E7%AB%B6%E7%A8%8B/">競程</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
         
-        <li>
-            <a href="/categories">分類-CATGORIES</a>
-        </li>
         
-        <li>
-            <a href="/tags">標籤-TAGS</a>
-        </li>
+            <span class="home-article-tag">
+                <i class="fas fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/code/">code</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E7%B7%B4%E7%BF%92/">練習</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E7%AB%B6%E7%A8%8B/">競程</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
         
-        <li>
-            <a href="/links">連結-LINKS</a>
-        </li>
+    </div>
+
+    <a href="/post/cpp3">繼續閱讀...&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
         
-        <li>
-            <a href="/about">關於我-ABOUT</a>
-        </li>
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/post/cpp2">
+                        [C++] toj 104 星星樹
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        toj 104 星星樹星星樹 是這次我要練習的題目。與巢狀迴圈有關。
+題目:大家都知道，星星是長在樹上的。星星樹，自然就是上面長了星星的樹。
+園丁JD3工作是專門維護長在資訊社社部的星星樹。工作包括每天澆水，拔雜草，防治蟲害（DEBUG）等等。當然，...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sun Nov 06 2022 19:34:14 GMT+0800">2022-11-06</span></span>
+        
+            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/%E7%AB%B6%E7%A8%8B/">競程</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fas fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/code/">code</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E7%B7%B4%E7%BF%92/">練習</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E7%AB%B6%E7%A8%8B/">競程</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/post/cpp2">繼續閱讀...&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/post/cpp">
+                        [C++] 巢狀迴圈－三角形繪製１
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        巢狀迴圈巢狀迴圈  迴圈包覆著迴圈。
+在解題時，我會將想法先列出來 再一個一個去假設變數..or loop 等等。 
+範例題目:範例輸入
+
+ 5  
+
+範例輸出
+
+$$$$$$$$$$$$$$$
+
+思考方法:
+要做幾次 ?
+要輸出幾個 $ ?
+最後再...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sun Nov 06 2022 01:01:01 GMT+0800">2022-11-06</span></span>
+        
+            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/%E7%AB%B6%E7%A8%8B/">競程</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fas fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/code/">code</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E7%B7%B4%E7%BF%92/">練習</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E7%AB%B6%E7%A8%8B/">競程</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/post/cpp">繼續閱讀...&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/post/1st">
+                        第一篇文章 - Hello World
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        Hello World! 這裡是用Hexo前端技術架設!
+hexo框架特點:
+你可以使用MARKDOWN 語法來寫!
+
+
+編輯快速 使用node.js
+可以與Github Pages heroku…等 部屬網站。
+豐富的外掛系統
+
+之後我會在這邊發布...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sat Nov 05 2022 15:26:46 GMT+0800">2022-11-05</span></span>
+        
+            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/%E5%88%9D%E6%AC%A1/">初次</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
+        
+        
+    </div>
+
+    <a href="/post/1st">繼續閱讀...&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
         
     </ul>
-    <div class="my_foot">
-        
-        <a target="_blank" rel="noopener" href="https://github.com/yudong-0222">
-            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
-        </a>
-        
+
+    <div class="home-paginator">
+        <div class="paginator">
+    
+
+    
+</div>
+
     </div>
 </div>
-<div class='shelter'>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2017</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">YuDong</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        讀者&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        閱覽&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <a target="_blank" href="https://hexo.io">Hexo</a> 框架&nbsp;|&nbsp;主題&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v0.3.0</a>
+        </div>
+        
+        
+    </div>
+</footer>
+        </div>
+    </div>
+
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
 </div>
-<style>
-    .shelter{
-        background-color: #333;
-        opacity:0.5;
-        cursor: pointer;
-        display: none; 
-        position: fixed;
-        left: 0;
-        top: 0; 
-        right: 0;
-        bottom: 0;
-        z-index: 1998;
-    }
-    .sidebar {
-        width: 66%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        bottom: 0;
-        background: #fff;
-        z-index: 1999;
-        text-align: center;
-        box-shadow: -6px 0 20px rgba(98, 94, 94, .815);
-    }
 
-    .topo {
-        width: 100%;
-        height: 200px;
-        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
-        background-size: 100% 100%;
-        position: relative;
-        display: flex;
-        align-items: flex-end
-    }
+    </div>
 
-    .topo h2 {
-        color: #fff;
-        z-index: 1;
-        position: relative;
-        margin: 0 0 10px 10px;
-        font-size: 1.2em;
-        box-sizing: border-box
-    }
+    
 
-    .topo:before {
-        content: '';
-        background-image: url(/image/pattern.png);
-        background-repeat: repeat;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 1
-    }
+    <div class="image-viewer-container">
+    <img src="">
+</div>
 
-    .sidebar ul {
-        width: 100%;
-        margin-top: 50px
-    }
 
-    .sidebar ul li {
-        height: 50px;
-        list-style: none;
-        font-size: 1.2em;
-        text-align: right;
-        margin-right: 10px
-    }
-
-    .sidebar ul li a {
-        display: grid;
-        color: #5d606a;
-        text-overflow: ellipsis;
-        width: 100%;
-        text-decoration: none
-    }
-
-    .my_foot {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        position: absolute;
-        bottom: 0
-    }
-
-    .my_foot a {
-        text-decoration: none;
-        margin-right: 10px;
-        display: inline-block
-    }
-
-    .my_foot a img {
-        width: 30px;
-        height: 30px
-    }
-</style>
-
-<script>
-    $( function () {
-	$( '.h-right-close>svg' )
-		.click( function () {
-			$( '.sidebar' )
-				.animate( {
-					right: "0"
-				}, 500 );
-			$( '.shelter' )
-				.fadeIn( "slow" )
-		} );
-	$( '.shelter' )
-		.click( function ( e ) {
-			$( '.sidebar' )
-				.animate( {
-					right: "-100%"
-				}, 500 );
-			$( '.shelter' )
-				.fadeOut( "slow" )
-		} )
-} )
-
-</script>
-
-<div class="home">
-	<div class="header-body-background">
-    <div class="header-body-background-content">
-        <span>
-            <img src="/image/icon95.png" alt="Quiet">
-        </span>
-
-        <h2>／在城市中學習程式的一切／</h2>
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜尋..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
     </div>
 </div>
-	<div class="main">
-		
-			<div class="post-block" id="content">
-				
-					<a href="/post/cpp3" class="post-block-content">
-						
-							<img src="https://www.educative.io/v2api/editorpage/5393602882568192/image/6038586442907648" alt="Quiet">
-						
-						<div class="post-block-content-info">
-							<h2>[C++] 巢狀迴圈－三角形繪製２</h2>
-							<span class="post-block-content-info-excerpt">
-								
-							</span>
-							<div class="post-block-content-info-exhibition">
-								<div class="post-block-content-info-exhibition-tags">
-									<span class="post-tag">
-										競程
-									</span>
-									<span class="post-tag">
-										2022-11-08
-									</span>
-								</div>
-								<div class="meat-type"></div>
-							</div>
-						</div>
-					</a>
-				
-					<a href="/post/cpp2" class="post-block-content">
-						
-							<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_CPP.jpg" alt="Quiet">
-						
-						<div class="post-block-content-info">
-							<h2>[C++] toj 104 星星樹</h2>
-							<span class="post-block-content-info-excerpt">
-								
-							</span>
-							<div class="post-block-content-info-exhibition">
-								<div class="post-block-content-info-exhibition-tags">
-									<span class="post-tag">
-										競程
-									</span>
-									<span class="post-tag">
-										2022-11-06
-									</span>
-								</div>
-								<div class="meat-type"></div>
-							</div>
-						</div>
-					</a>
-				
-					<a href="/post/cpp" class="post-block-content">
-						
-							<img src="https://cloud.google.com/static/cpp/images/cpp-logo.png?hl=zh-tw" alt="Quiet">
-						
-						<div class="post-block-content-info">
-							<h2>[C++] 巢狀迴圈－三角形繪製１</h2>
-							<span class="post-block-content-info-excerpt">
-								
-							</span>
-							<div class="post-block-content-info-exhibition">
-								<div class="post-block-content-info-exhibition-tags">
-									<span class="post-tag">
-										競程
-									</span>
-									<span class="post-tag">
-										2022-11-06
-									</span>
-								</div>
-								<div class="meat-type"></div>
-							</div>
-						</div>
-					</a>
-				
-					<a href="/post/1st" class="post-block-content">
-						
-							<img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt="Quiet">
-						
-						<div class="post-block-content-info">
-							<h2>第一篇文章 - Hello World</h2>
-							<span class="post-block-content-info-excerpt">
-								
-							</span>
-							<div class="post-block-content-info-exhibition">
-								<div class="post-block-content-info-exhibition-tags">
-									<span class="post-tag">
-										初次
-									</span>
-									<span class="post-tag">
-										2022-11-05
-									</span>
-								</div>
-								<div class="meat-type"></div>
-							</div>
-						</div>
-					</a>
-				
-			</div>
-		
-		
-	
-	</div>
-	<div class="change-page">
-		
-				
-	</div>
-	
-</div>
-		
-<div class="footer">
-	<div class="Copyright">
-		©2022 By YuDong ✅
-	<div class="contact">
-		
-		<a target="_blank" rel="noopener" href="https://github.com/yudong-0222">
-			<img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主題">
-		</a>
-		
-	</div>
+
+    
+
+</main>
+
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts pjax">
+    
 </div>
 
-<script src="/js/gotop.js"></script>
 
+    
+<script src="/js/libs/pjax.min.js"></script>
 
-<style type="text/css">
-    @media screen and (min-width: 600px) {
-        .goTop>span {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            opacity: 0.8;
-            background: rgba(18, 24, 58, 0.06);
-            text-align: center;
-            transition: border .5s;
-            border: 1px solid rgba(18, 24, 58, 0.06);
-
-            -moz-transition: border .5s;
-            /* Firefox 4 */
-            -webkit-transition: border .5s;
-            /* Safari 和 Chrome */
-            -o-transition: border .5s;
-            /* Opera */
-        }
-
-        .goTop>span:hover {
-            border: 1px solid #6680B3;
-        }
-
-
-        .goTop {
-            position: fixed;
-            right: 30px;
-            bottom: 80px;
-        }
-
-        .goTop>span>svg {
-            width: 20px;
-            height: 20px;
-            opacity: 0.7;
-        }
-
-    }
-
-    @media screen and (max-width: 600px) {
-        .goTop {
-            display: none;
-        }
-    }
-</style>
-<div class="goTop" id="js-go_top">
-    <span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <g>
-                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
-            </g>
-        </svg>
-    </span>
-</div>
 <script>
-    $( '#js-go_top' )
-	.gotoTop( {
-		offset: 500,
-		speed: 300,
-		animationShow: {
-			'transform': 'translate(0,0)',
-			'transition': 'transform .5s ease-in-out'
-		},
-		animationHide: {
-			'transform': 'translate(100px,0)',
-			'transition': 'transform .5s ease-in-out'
-		}
-	} );
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
 </script>
 
 
-    <!-- Gitalk -->
-    <script>
-        const data = '{"clientID":"6edacacd6a155deb46f6","clientSecret":"7b68cac39ac96a2f0715a7107da4451c1c0be151","repo":"yudong-0222.github.io","owner":"yudong-0222","admin":"yudong-0222"}'
-        const gitalk = new Gitalk({
-            ...JSON.parse( data),
-            id:location.pathname,
-            distractionFreeMode:false
-        })
-        
-        if(Boolean('')){
-            gitalk.render('gitalk-container')
-        }
-    </script>
 
-<script>
-	console.log('\n %c Hexo-Quiet 主題 %c https://github.com/79e/hexo-theme-quiet \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;')
-</script>
-	</body>
+</body>
 </html>
-
