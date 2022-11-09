@@ -34,7 +34,7 @@
     <script id="hexo-configurations">
     let REDEFINE = window.REDEFINE || {};
     REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"zh-TW","path":"search.xml"};
-    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/china.gif","favicon":"/images/icon95.png","article_img_align":"center","left_side_width":"240px","content_max_width":"960px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bac.svg","description":"／在城市中學習程式的一切／"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"0.3.0"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/china.gif","favicon":"/images/icon95.png","article_img_align":"center","left_side_width":"240px","content_max_width":"960px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bac.svg","description":"／在城市中學習程式的一切／"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"0.3.0"};
     REDEFINE.language_ago = {"second":"%s 秒前","minute":"%s 分鐘前","hour":"%s 小時前","day":"%s 天前","week":"%s 周前","month":"%s 個月前","year":"%s 年前"};
   </script>
 <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="YuDong's Daily" type="application/atom+xml">
@@ -244,7 +244,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>382 字數</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>385 字數</span>
         </span>
     
     
@@ -284,39 +284,12 @@
 <blockquote>
 <p>範例輸出</p>
 </blockquote>
-<pre><code class="cpp">   *
-  ***
- *****
-*******
-</code></pre>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   *</span><br><span class="line">  ***</span><br><span class="line"> *****</span><br><span class="line">*******</span><br></pre></td></tr></table></figure>
+
 <h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法"></a>思考方法</h2><p>首先，我將發生的事情寫下來，設了兩個變數: wall, space</p>
-<pre><code class="html">// 0 space 7 #
-// 1 space 5 #
-// 2 space 3 #
-// 3 space 1 #
-
-// space wall
-</code></pre>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 0 space 7 #</span><br><span class="line">// 1 space 5 #</span><br><span class="line">// 2 space 3 #</span><br><span class="line">// 3 space 1 #</span><br><span class="line"></span><br><span class="line">// space wall</span><br></pre></td></tr></table></figure>
 <p>再來，利用迴圈完成。<br>大概就出來了。</p>
-<pre><code class="cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-
-int main() &#123;
-  int n;
-  cin &gt;&gt; n;
-  for (int i = 0; i &lt; n; i++) &#123; //大迴圈: 次數
-    for (int space = 1; space &lt; n-i; space++) &#123; //空白處理迴圈- 
-    //空白由上往下遞減.
-      cout &lt;&lt; &quot; &quot;;
-    &#125;
-    for (int wall = 0; wall &lt; 2*i+1; wall++) &#123; //2*i+1 為奇數
-      cout &lt;&lt; &quot;*&quot;;
-    &#125;
-    cout &lt;&lt; &quot;\n&quot;;
-  &#125;
-&#125;
-</code></pre>
-
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n;</span><br><span class="line">  cin &gt;&gt; n;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123; <span class="comment">//大迴圈: 次數</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> space = <span class="number">1</span>; space &lt; n-i; space++) &#123; <span class="comment">//空白處理迴圈- </span></span><br><span class="line">    <span class="comment">//空白由上往下遞減.</span></span><br><span class="line">      cout &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> wall = <span class="number">0</span>; wall &lt; <span class="number">2</span>*i+<span class="number">1</span>; wall++) &#123; <span class="comment">//2*i+1 為奇數</span></span><br><span class="line">      cout &lt;&lt; <span class="string">&quot;*&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
 
         
@@ -404,7 +377,7 @@ int main() &#123;
                 Gitalk && new Gitalk({
                     clientID: '6edacacd6a155deb46f6',
                     clientSecret: '45f36ae1b9de92ae6de32ae8627441a98ed04495',
-                    repo: 'yudong-0222.github.io# Repository name to store issues',
+                    repo: 'yudong-0222.github.io',
                     owner: 'YuDong-0222',
                     admin: ['YuDong-0222'],
                     id: __gitalk__pathname,
