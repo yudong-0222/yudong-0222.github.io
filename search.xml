@@ -19,35 +19,6 @@
       </categories>
   </entry>
   <entry>
-    <title>[C++] 巢狀迴圈－三角形繪製１</title>
-    <url>/post/cpp.html</url>
-    <content><![CDATA[<h1 id="巢狀迴圈"><a href="#巢狀迴圈" class="headerlink" title="巢狀迴圈"></a>巢狀迴圈</h1><p><strong>巢狀迴圈</strong>  迴圈包覆著迴圈。</p>
-<p>在解題時，我會將想法先列出來 再一個一個去假設變數..or loop 等等。 </p>
-<h2 id="範例題目"><a href="#範例題目" class="headerlink" title="範例題目:"></a><em>範例題目:</em></h2><p><strong>範例輸入</strong></p>
-<blockquote>
-<p> 5  </p>
-</blockquote>
-<p><strong>範例輸出</strong></p>
-<blockquote>
-<p>$<br>$$<br>$$$<br>$$$$<br>$$$$$</p>
-</blockquote>
-<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法:"></a>思考方法:</h2><ol>
-<li>要做幾次 ?</li>
-<li>要輸出幾個 <strong>$</strong> ?</li>
-<li>最後再輸出換行 “\n”</li>
-</ol>
-<h1 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="type">int</span> i,j;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;n;i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (j=<span class="number">0</span>;j&lt;i;j++) &#123;</span><br><span class="line">			cout &lt;&lt; <span class="string">&quot;$&quot;</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>競程</category>
-      </categories>
-      <tags>
-        <tag>code</tag>
-        <tag>練習</tag>
-        <tag>競程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[C++] toj 104 星星樹</title>
     <url>/post/cpp2.html</url>
     <content><![CDATA[<h1 id="toj-104-星星樹"><a href="#toj-104-星星樹" class="headerlink" title="toj 104 星星樹"></a>toj 104 星星樹</h1><p><a class="link"   href="https://toj.tfcis.org/oj/pro/104/" >星星樹<i class="fas fa-external-link-alt"></i></a> 是這次我要練習的題目。<br>與巢狀迴圈有關。</p>
@@ -125,6 +96,35 @@
 <li>對於<code>巢狀迴圈</code>有更多的了解了！</li>
 <li>我解題會把迴圈拆的一個步驟一個迴圈去想，一次處裡多個迴圈我腦子會炸！</li>
 </ul>
+]]></content>
+      <categories>
+        <category>競程</category>
+      </categories>
+      <tags>
+        <tag>code</tag>
+        <tag>練習</tag>
+        <tag>競程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[C++] 巢狀迴圈－三角形繪製１</title>
+    <url>/post/cpp.html</url>
+    <content><![CDATA[<h1 id="巢狀迴圈"><a href="#巢狀迴圈" class="headerlink" title="巢狀迴圈"></a>巢狀迴圈</h1><p><strong>巢狀迴圈</strong>  迴圈包覆著迴圈。</p>
+<p>在解題時，我會將想法先列出來 再一個一個去假設變數..or loop 等等。 </p>
+<h2 id="範例題目"><a href="#範例題目" class="headerlink" title="範例題目:"></a><em>範例題目:</em></h2><p><strong>範例輸入</strong></p>
+<blockquote>
+<p> 5  </p>
+</blockquote>
+<p><strong>範例輸出</strong></p>
+<blockquote>
+<p>$<br>$$<br>$$$<br>$$$$<br>$$$$$</p>
+</blockquote>
+<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法:"></a>思考方法:</h2><ol>
+<li>要做幾次 ?</li>
+<li>要輸出幾個 <strong>$</strong> ?</li>
+<li>最後再輸出換行 “\n”</li>
+</ol>
+<h1 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="type">int</span> i,j;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;n;i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (j=<span class="number">0</span>;j&lt;i;j++) &#123;</span><br><span class="line">			cout &lt;&lt; <span class="string">&quot;$&quot;</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>競程</category>
