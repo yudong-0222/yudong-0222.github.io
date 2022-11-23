@@ -3,11 +3,11 @@
   <title>YuDong&#39;s Daily</title>
   
   <subtitle>a</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://yudong-0222.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://yudong-0222.github.io/"/>
   <updated>2022-11-08T16:29:01.266Z</updated>
-  <id>http://example.com/</id>
+  <id>http://yudong-0222.github.io/</id>
   
   <author>
     <name>Yu Dong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>[C++] 巢狀迴圈－三角形繪製２</title>
-    <link href="http://example.com/post/cpp3"/>
-    <id>http://example.com/post/cpp3</id>
+    <link href="http://yudong-0222.github.io/post/cpp3"/>
+    <id>http://yudong-0222.github.io/post/cpp3</id>
     <published>2022-11-08T11:19:10.000Z</published>
     <updated>2022-11-08T16:29:01.266Z</updated>
     
@@ -33,21 +33,21 @@
     
     
     
-    <category term="競程" scheme="http://example.com/categories/%E7%AB%B6%E7%A8%8B/"/>
+    <category term="競程" scheme="http://yudong-0222.github.io/categories/%E7%AB%B6%E7%A8%8B/"/>
     
     
-    <category term="code" scheme="http://example.com/tags/code/"/>
+    <category term="code" scheme="http://yudong-0222.github.io/tags/code/"/>
     
-    <category term="練習" scheme="http://example.com/tags/%E7%B7%B4%E7%BF%92/"/>
+    <category term="練習" scheme="http://yudong-0222.github.io/tags/%E7%B7%B4%E7%BF%92/"/>
     
-    <category term="競程" scheme="http://example.com/tags/%E7%AB%B6%E7%A8%8B/"/>
+    <category term="競程" scheme="http://yudong-0222.github.io/tags/%E7%AB%B6%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>[C++] toj 104 星星樹</title>
-    <link href="http://example.com/post/cpp2"/>
-    <id>http://example.com/post/cpp2</id>
+    <link href="http://yudong-0222.github.io/post/cpp2"/>
+    <id>http://yudong-0222.github.io/post/cpp2</id>
     <published>2022-11-06T11:34:14.169Z</published>
     <updated>2022-11-06T12:25:09.577Z</updated>
     
@@ -61,21 +61,21 @@
     
     
     
-    <category term="競程" scheme="http://example.com/categories/%E7%AB%B6%E7%A8%8B/"/>
+    <category term="競程" scheme="http://yudong-0222.github.io/categories/%E7%AB%B6%E7%A8%8B/"/>
     
     
-    <category term="code" scheme="http://example.com/tags/code/"/>
+    <category term="code" scheme="http://yudong-0222.github.io/tags/code/"/>
     
-    <category term="練習" scheme="http://example.com/tags/%E7%B7%B4%E7%BF%92/"/>
+    <category term="練習" scheme="http://yudong-0222.github.io/tags/%E7%B7%B4%E7%BF%92/"/>
     
-    <category term="競程" scheme="http://example.com/tags/%E7%AB%B6%E7%A8%8B/"/>
+    <category term="競程" scheme="http://yudong-0222.github.io/tags/%E7%AB%B6%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>[C++] 巢狀迴圈－三角形繪製１</title>
-    <link href="http://example.com/post/cpp"/>
-    <id>http://example.com/post/cpp</id>
+    <link href="http://yudong-0222.github.io/post/cpp"/>
+    <id>http://yudong-0222.github.io/post/cpp</id>
     <published>2022-11-05T17:01:01.000Z</published>
     <updated>2022-11-08T12:48:44.410Z</updated>
     
@@ -90,21 +90,21 @@
     
     
     
-    <category term="競程" scheme="http://example.com/categories/%E7%AB%B6%E7%A8%8B/"/>
+    <category term="競程" scheme="http://yudong-0222.github.io/categories/%E7%AB%B6%E7%A8%8B/"/>
     
     
-    <category term="code" scheme="http://example.com/tags/code/"/>
+    <category term="code" scheme="http://yudong-0222.github.io/tags/code/"/>
     
-    <category term="練習" scheme="http://example.com/tags/%E7%B7%B4%E7%BF%92/"/>
+    <category term="練習" scheme="http://yudong-0222.github.io/tags/%E7%B7%B4%E7%BF%92/"/>
     
-    <category term="競程" scheme="http://example.com/tags/%E7%AB%B6%E7%A8%8B/"/>
+    <category term="競程" scheme="http://yudong-0222.github.io/tags/%E7%AB%B6%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>第一篇文章 - Hello World</title>
-    <link href="http://example.com/post/1st"/>
-    <id>http://example.com/post/1st</id>
+    <link href="http://yudong-0222.github.io/post/1st"/>
+    <id>http://yudong-0222.github.io/post/1st</id>
     <published>2022-11-05T07:26:46.000Z</published>
     <updated>2022-11-08T15:54:58.609Z</updated>
     
@@ -118,7 +118,7 @@
     
     
     
-    <category term="初次" scheme="http://example.com/categories/%E5%88%9D%E6%AC%A1/"/>
+    <category term="初次" scheme="http://yudong-0222.github.io/categories/%E5%88%9D%E6%AC%A1/"/>
     
     
   </entry>
