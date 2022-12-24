@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="yudong, yudong筆記, yudong code, yudong競程, 競程, yudong0222, yudong 演算法, 演算法筆記, 競程筆記, 演算法競賽">
-    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="0">
     <meta name="author" content="YuDong">
     
     <title>
@@ -34,7 +34,7 @@
     <script id="hexo-configurations">
     let REDEFINE = window.REDEFINE || {};
     REDEFINE.hexo_config = {"hostname":"yudong-0222.github.io","root":"/","language":"zh-TW","path":"search.xml"};
-    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/china.gif","favicon":"/images/icon95.png","article_img_align":"center","left_side_width":"240px","content_max_width":"960px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bac.svg","description":"／在城市中學習程式的一切／"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"0.3.0"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/china.gif","favicon":"/images/icon95.png","article_img_align":"center","left_side_width":"240px","content_max_width":"960px","nav_color":{"left":"#002159","right":"#0f1c33","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/eqa.svg","description":"在城市中學習程式的一切"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"0.3.0"};
     REDEFINE.language_ago = {"second":"%s 秒前","minute":"%s 分鐘前","hour":"%s 小時前","day":"%s 天前","week":"%s 周前","month":"%s 個月前","year":"%s 年前"};
   </script>
 <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="YuDong's Daily" type="application/atom+xml">
@@ -93,7 +93,7 @@
                             <a class=""
                                href="/archives"
                             >
-                                歸檔
+                                文章
                             </a>
                         </li>
                     
@@ -102,6 +102,14 @@
                                href="/categories"
                             >
                                 分類
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                標籤
                             </a>
                         </li>
                     
@@ -149,12 +157,17 @@
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/archives">歸檔</a>
+                       href="/archives">文章</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/categories">分類</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">標籤</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
@@ -407,7 +420,7 @@
                 <input autocomplete="off"
                        autocorrect="off"
                        autocapitalize="off"
-                       placeholder="搜尋..."
+                       placeholder="輸入關鍵字..."
                        spellcheck="false"
                        type="search"
                        class="search-input"

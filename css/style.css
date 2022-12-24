@@ -2304,7 +2304,7 @@ pre .selector-pseudo {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, rgba(247,135,54,0.208) 0%, rgba(54,125,247,0.208) 100%);
+  background: linear-gradient(120deg, rgba(0,33,89,0.208) 0%, rgba(15,28,51,0.208) 100%);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding-top: 2px;
@@ -2938,7 +2938,7 @@ pre .selector-pseudo {
   box-sizing: border-box;
   width: 100%;
   overflow: hidden;
-  background: url("/images/bac.svg") center center/cover no-repeat;
+  background: url("/images/eqa.svg") center center/cover no-repeat;
   background-position-y: 70px;
 }
 @media (max-width: 780px) {
