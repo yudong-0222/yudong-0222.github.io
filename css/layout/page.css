@@ -54,22 +54,11 @@ redefine-mobile()
 redefine-tablet()
 redefine-mobile()
 }
-.page-container .page-main-content .page-main-content-bottom {
-  width: 100%;
+.page-container .page-main-content .page-main-content-middle .main-content.has-toc {
+  max-width: $has-toc-content-max-width !important;
 }
-.page-container .page-aside {
-  position: fixed;
-  top: 105px;
-  border-radius: 18px;
-  left: -240px;
-  width: 240px;
-  height: auto;
-  margin-right: 100px;
-  overflow-y: auto;
-  padding: 20px;
-  box-sizing: border-box;
-  transition: all 0.1s ease;
-redefine-tablet()
+.page-container .page-main-content .page-main-content-middle .page-main-content-bottom {
+  width: 100%;
 }
 .page-container .post-tools {
   position: fixed;
