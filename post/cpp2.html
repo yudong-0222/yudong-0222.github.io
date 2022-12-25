@@ -174,7 +174,7 @@
                                 href="/about" >
                                 
                                     
-                                        <i class="fa-regular fa-user"></i>
+                                        <i class="fa-regular fa-circle-info"></i>
                                     
                                     關於
                                 
@@ -281,7 +281,7 @@
                        href="/about" >
                          
                             
-                                <i class="fa-regular fa-user"></i>
+                                <i class="fa-regular fa-circle-info"></i>
                             
                             關於
                         
@@ -321,7 +321,7 @@
                         <div class="author">
                             <span class="name">YuDong</span>
                             
-                                <span class="author-label">Lv1</span>
+                                <span class="author-label">lol</span>
                             
                         </div>
                         <div class="meta-info">
@@ -477,90 +477,12 @@
 
         
             <div class="toc-content-container">
-                .post-toc-wrap {
-  width 100%
-  font-size 0.92rem
-  box-sizing border-box
-  font-family "Noto Sans", sans-serif
-
-
-  
-  .post-toc {
-    
-    ol {
-      border-left 2px dotted var(--shadow-color-1)
-      list-style none
-      margin 0
-      padding 0 2px 12px 10px
-      text-align left
-
-      &:last-child {
-        padding-bottom 0
-      }
-
-      > ol {
-        padding-left 0
-      }
-
-      a {
-        transition-property all
-        transition()
-        
-      }
-    }
-
-
-    .nav-item {
-      line-height 2
-      overflow hidden
-      text-overflow ellipsis
-      white-space nowrap
-      //word-wrap:break-word
-      font-size 0.9rem
-    }
-
-
-    .nav {
-      .nav-child {
-        display hexo-config('toc.expand_all') ? block : none
-      }
-
-      .active > .nav-child {
-        display block
-      }
-
-      .active-current > .nav-child {
-        display block
-
-        > .nav-item {
-          display block
-        }
-      }
-
-
-      .nav-number, .nav-text {
-        color var(--default-text-color)
-      }
-
-      .active > a {
-        .nav-number, .nav-text {
-          color var(--primary-color)
-          font-weight bold
-        }
-      }
-
-      .active-current > a {
-        .nav-number, .nav-text {
-          //color var(--primary-color)
-          font-weight bold
-          transition-duration 0.1s
-        }
-      }
-    }
-  }
-}
-
-
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list"></i> <strong>目錄</strong></div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#toj-104-%E6%98%9F%E6%98%9F%E6%A8%B9"><span class="nav-text">toj 104 星星樹</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%8C%E7%9B%AE"><span class="nav-text">題目:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E8%80%83%E6%96%B9%E6%B3%95"><span class="nav-text">思考方法</span></a></li></ol></li></ol>
+    </div>
+</div>
             </div>
         
     </div>
