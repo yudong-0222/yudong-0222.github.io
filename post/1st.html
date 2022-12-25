@@ -413,12 +413,90 @@
 
         
             <div class="toc-content-container">
-                <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list"></i> <strong>目錄</strong></div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-World"><span class="nav-text">Hello World!</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo%E6%A1%86%E6%9E%B6%E7%89%B9%E9%BB%9E"><span class="nav-text">hexo框架特點:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B9%8B%E5%BE%8C%E6%88%91%E6%9C%83%E5%9C%A8%E9%80%99%E9%82%8A%E7%99%BC%E5%B8%83%E4%B8%80%E4%BA%9B%E6%88%91%E7%AB%B6%E7%A8%8B%E5%AD%B8%E7%BF%92%E7%9A%84%E6%9D%B1%E8%A5%BF-%E4%B9%9F%E6%AD%A1%E8%BF%8E%E5%A4%A7%E5%AE%B6%E4%B8%80%E8%B5%B7%E4%BA%A4%E6%B5%81"><span class="nav-text">之後我會在這邊發布一些我競程學習的東西~ 也歡迎大家一起交流</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E9%A0%81%E9%9D%A2"><span class="nav-text">其他頁面:</span></a></li></ol></li></ol>
-    </div>
-</div>
+                .post-toc-wrap {
+  width 100%
+  font-size 0.92rem
+  box-sizing border-box
+  font-family "Noto Sans", sans-serif
+
+
+  
+  .post-toc {
+    
+    ol {
+      border-left 2px dotted var(--shadow-color-1)
+      list-style none
+      margin 0
+      padding 0 2px 12px 10px
+      text-align left
+
+      &:last-child {
+        padding-bottom 0
+      }
+
+      > ol {
+        padding-left 0
+      }
+
+      a {
+        transition-property all
+        transition()
+        
+      }
+    }
+
+
+    .nav-item {
+      line-height 2
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      //word-wrap:break-word
+      font-size 0.9rem
+    }
+
+
+    .nav {
+      .nav-child {
+        display hexo-config('toc.expand_all') ? block : none
+      }
+
+      .active > .nav-child {
+        display block
+      }
+
+      .active-current > .nav-child {
+        display block
+
+        > .nav-item {
+          display block
+        }
+      }
+
+
+      .nav-number, .nav-text {
+        color var(--default-text-color)
+      }
+
+      .active > a {
+        .nav-number, .nav-text {
+          color var(--primary-color)
+          font-weight bold
+        }
+      }
+
+      .active-current > a {
+        .nav-number, .nav-text {
+          //color var(--primary-color)
+          font-weight bold
+          transition-duration 0.1s
+        }
+      }
+    }
+  }
+}
+
+
             </div>
         
     </div>
