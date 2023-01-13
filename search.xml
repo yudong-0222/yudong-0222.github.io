@@ -101,42 +101,6 @@
       </tags>
   </entry>
   <entry>
-    <title>TOJ 104 星星樹</title>
-    <url>/post/cpp2.html</url>
-    <content><![CDATA[<h1 id="toj-104-星星樹"><a href="#toj-104-星星樹" class="headerlink" title="toj 104 星星樹"></a>toj 104 星星樹</h1><p><a class="link"   href="https://toj.tfcis.org/oj/pro/104/" >星星樹<i class="fa-solid fa-up-right-from-square"></i></a> 是這次我要練習的題目。<br>與巢狀迴圈有關。</p>
-<h2 id="題目"><a href="#題目" class="headerlink" title="題目:"></a>題目:</h2><p>大家都知道，星星是長在樹上的。星星樹，自然就是上面長了星星的樹。</p>
-<p>園丁JD3工作是專門維護長在資訊社社部的星星樹。工作包括每天澆水，拔雜草，防治蟲害（DEBUG）等等。當然，還有把星星樹定期修剪成整齊的形狀。</p>
-<p>星星樹的樹枝發展相當有規律，呈現層狀。一棵好看的星星樹並且從樹的底端開始，往上呈現整齊的圓錐狀。為了保持穩定不傾倒，每一層的星星會修剪的比下面一層少正好兩顆。星星樹最頂端，則總是最閃亮的，那一顆的星星。</p>
-<blockquote>
-<p>輸入說明</p>
-</blockquote>
-<p><code>一個數字N，代表星星樹的高度。</code></p>
-<blockquote>
-<p>輸出說明</p>
-</blockquote>
-<p><code>星星樹。</code></p>
-<blockquote>
-<p>範例輸入</p>
-</blockquote>
-<p><code>4</code></p>
-<blockquote>
-<p>範例輸出</p>
-</blockquote>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line">   *</span><br><span class="line">  ***</span><br><span class="line"> *****</span><br><span class="line">*******</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法"></a>思考方法</h2><p>首先，我將發生的事情寫下來，設了兩個變數: wall, space</p>
-<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line">// 0 space 7 #</span><br><span class="line">// 1 space 5 #</span><br><span class="line">// 2 space 3 #</span><br><span class="line">// 3 space 1 #</span><br><span class="line"></span><br><span class="line">// space wall</span><br></pre></td></tr></table></figure></div>
-<p>再來，利用迴圈完成。<br>大概就出來了。</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n;</span><br><span class="line">  cin &gt;&gt; n;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123; <span class="comment">//大迴圈: 次數</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> space = <span class="number">1</span>; space &lt; n-i; space++) &#123; <span class="comment">//空白處理迴圈- </span></span><br><span class="line">    <span class="comment">//空白由上往下遞減.</span></span><br><span class="line">      cout &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> wall = <span class="number">0</span>; wall &lt; <span class="number">2</span>*i+<span class="number">1</span>; wall++) &#123; <span class="comment">//2*i+1 為奇數</span></span><br><span class="line">      cout &lt;&lt; <span class="string">&quot;*&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>演算法筆記</category>
-      </categories>
-      <tags>
-        <tag>競程</tag>
-        <tag>題解</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Kattis-Prva</title>
     <url>/post/cpp4.html</url>
     <content><![CDATA[<h1 id="題目-Kattis-Prva"><a href="#題目-Kattis-Prva" class="headerlink" title="題目: Kattis - Prva"></a>題目: Kattis - Prva</h1><p>出處: (<a class="link" href="https://open.kattis.com/problems/prva">https://open.kattis.com/problems/prva<i class="fa-solid fa-up-right-from-square"></i></a>)</p>
@@ -185,6 +149,42 @@
       </categories>
       <tags>
         <tag>社團</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TOJ 104 星星樹</title>
+    <url>/post/cpp2.html</url>
+    <content><![CDATA[<h1 id="toj-104-星星樹"><a href="#toj-104-星星樹" class="headerlink" title="toj 104 星星樹"></a>toj 104 星星樹</h1><p><a class="link"   href="https://toj.tfcis.org/oj/pro/104/" >星星樹<i class="fa-solid fa-up-right-from-square"></i></a> 是這次我要練習的題目。<br>與巢狀迴圈有關。</p>
+<h2 id="題目"><a href="#題目" class="headerlink" title="題目:"></a>題目:</h2><p>大家都知道，星星是長在樹上的。星星樹，自然就是上面長了星星的樹。</p>
+<p>園丁JD3工作是專門維護長在資訊社社部的星星樹。工作包括每天澆水，拔雜草，防治蟲害（DEBUG）等等。當然，還有把星星樹定期修剪成整齊的形狀。</p>
+<p>星星樹的樹枝發展相當有規律，呈現層狀。一棵好看的星星樹並且從樹的底端開始，往上呈現整齊的圓錐狀。為了保持穩定不傾倒，每一層的星星會修剪的比下面一層少正好兩顆。星星樹最頂端，則總是最閃亮的，那一顆的星星。</p>
+<blockquote>
+<p>輸入說明</p>
+</blockquote>
+<p><code>一個數字N，代表星星樹的高度。</code></p>
+<blockquote>
+<p>輸出說明</p>
+</blockquote>
+<p><code>星星樹。</code></p>
+<blockquote>
+<p>範例輸入</p>
+</blockquote>
+<p><code>4</code></p>
+<blockquote>
+<p>範例輸出</p>
+</blockquote>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line">   *</span><br><span class="line">  ***</span><br><span class="line"> *****</span><br><span class="line">*******</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法"></a>思考方法</h2><p>首先，我將發生的事情寫下來，設了兩個變數: wall, space</p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line">// 0 space 7 #</span><br><span class="line">// 1 space 5 #</span><br><span class="line">// 2 space 3 #</span><br><span class="line">// 3 space 1 #</span><br><span class="line"></span><br><span class="line">// space wall</span><br></pre></td></tr></table></figure></div>
+<p>再來，利用迴圈完成。<br>大概就出來了。</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n;</span><br><span class="line">  cin &gt;&gt; n;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123; <span class="comment">//大迴圈: 次數</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> space = <span class="number">1</span>; space &lt; n-i; space++) &#123; <span class="comment">//空白處理迴圈- </span></span><br><span class="line">    <span class="comment">//空白由上往下遞減.</span></span><br><span class="line">      cout &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> wall = <span class="number">0</span>; wall &lt; <span class="number">2</span>*i+<span class="number">1</span>; wall++) &#123; <span class="comment">//2*i+1 為奇數</span></span><br><span class="line">      cout &lt;&lt; <span class="string">&quot;*&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>演算法筆記</category>
+      </categories>
+      <tags>
+        <tag>競程</tag>
+        <tag>題解</tag>
       </tags>
   </entry>
 </search>
