@@ -6,7 +6,7 @@
   <link href="http://yudong-0222.github.io/atom.xml" rel="self"/>
   
   <link href="http://yudong-0222.github.io/"/>
-  <updated>2023-01-14T14:36:21.385Z</updated>
+  <updated>2023-06-05T15:14:22.133Z</updated>
   <id>http://yudong-0222.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Return - 部落格更新</title>
+    <link href="http://yudong-0222.github.io/post/blogUpdate"/>
+    <id>http://yudong-0222.github.io/post/blogUpdate</id>
+    <published>2023-06-05T15:08:00.000Z</published>
+    <updated>2023-06-05T15:14:22.133Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Blog-Updated"><a href="#Blog-Updated" class="headerlink" title="Blog Updated!"></a>Blog Updated!</h2><p>部落格更新ㄌ</p><p>話說我真的很久沒碰這東西，連怎麼開啟localhost都忘記了@@<br>不過既然我現在找回怎麼使用了，就可以繼續編寫文章ㄌ :D</p>]]></content>
+    
+    
+    <summary type="html">Back</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Kattis-Prva</title>
@@ -47,9 +64,9 @@
     <link href="http://yudong-0222.github.io/post/tntcsh_csirc"/>
     <id>http://yudong-0222.github.io/post/tntcsh_csirc</id>
     <published>2022-12-25T14:40:24.000Z</published>
-    <updated>2023-01-18T09:46:59.111Z</updated>
+    <updated>2023-06-05T15:18:49.074Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="社團創辦計畫"><a href="#社團創辦計畫" class="headerlink" title="社團創辦計畫"></a>社團創辦計畫</h1><p>鑒於南大附中真的對於資訊這方面沒有甚麼培訓之類的。<br>我將要在這創建一個社團，讓資訊種子在南大附中開花<br>南大附中資訊社。</p><h2 id="社團創辦計畫書"><a href="#社團創辦計畫書" class="headerlink" title="社團創辦計畫書"></a><a class="link"   href="https://hackmd.io/@yudong/tntcsh_csirc" >社團創辦計畫書 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h2><p>:D 上面是社團創辦計畫書 第一版。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="社團創辦計畫"><a href="#社團創辦計畫" class="headerlink" title="社團創辦計畫"></a>社團創辦計畫</h1><p>鑒於南大附中真的對於資訊這方面沒有甚麼培訓之類的。<br>我將要在這創建一個社團，讓資訊種子在南大附中開花<br>南大附中資訊社。</p><h2 id="社團所有連結"><a href="#社團所有連結" class="headerlink" title="社團所有連結"></a><a class="link"   href="https://ashsnutncsirc.vercel.app/link" >社團所有連結 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h2><h2 id="社團已經進入正式連署階段"><a href="#社團已經進入正式連署階段" class="headerlink" title="社團已經進入正式連署階段!!!"></a>社團已經進入正式連署階段!!!</h2><ul><li><p>南大附中的校內學生 可以透過 <a class="link"   href="https://docs.google.com/forms/d/e/1FAIpQLSfZPJO97Ft946LkNe0Qv1wI_GOFr46RZ4tT5ZVg897O45S4XQ/viewform?usp=send_form" >連署表單 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 加入<br>這樣的話你開學就不用選社團了唷!!</p></li><li><p>校外的學生 如果想支持我們 則可以透過 <strong>分享的方式</strong> 讓更多人知道我們!</p></li></ul><h2 id="更多內容-都在HackMD"><a href="#更多內容-都在HackMD" class="headerlink" title="更多內容? 都在HackMD"></a>更多內容? 都在HackMD</h2><ul><li>HackMD - <a class="link"   href="https://hackmd.io/@YuDong/ashsnutn_csirc" >點擊此處 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li><li>我們設置了一個<a class="link"   href="https://ashsnutncsirc.vercel.app/link" >連結樹 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 你可以透過這個連到與我們有關的任何地方!</li></ul>]]></content>
     
     
       
@@ -150,9 +167,9 @@
     <link href="http://yudong-0222.github.io/post/1st"/>
     <id>http://yudong-0222.github.io/post/1st</id>
     <published>2022-11-05T07:26:46.000Z</published>
-    <updated>2022-12-28T11:56:27.301Z</updated>
+    <updated>2023-06-05T15:07:12.741Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><p>這裡是我用來記錄我所學，關於競程的筆記部落格！<br>內容可能包含:</p><ul><li>題解過程</li><li>語法</li><li>演算法</li><li>資料結構<br>…等 競程中常使用到的相關東西！</li></ul><p> <strong>這裡是用Hexo前端技術架設!</strong></p><h2 id="hexo框架特點"><a href="#hexo框架特點" class="headerlink" title="hexo框架特點:"></a>hexo框架特點:</h2><ul><li>你可以使用MARKDOWN 語法來寫!</li></ul><ul><li>編輯快速 使用node.js</li><li>可以與Github Pages heroku…等 部屬網站。</li><li>豐富的外掛系統</li></ul><h4 id="之後我會在這邊發布一些我競程學習的東西-也歡迎大家一起交流"><a href="#之後我會在這邊發布一些我競程學習的東西-也歡迎大家一起交流" class="headerlink" title="之後我會在這邊發布一些我競程學習的東西~ 也歡迎大家一起交流"></a>之後我會在這邊發布一些我競程學習的東西~ 也歡迎大家一起交流</h4><h2 id="其他頁面"><a href="#其他頁面" class="headerlink" title="其他頁面:"></a>其他頁面:</h2><p><strong>你可以按上面的按鈕導航(手機則為</strong> <em>三條線</em> <strong>)，看看一些不一樣的東西</strong></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1><p>這裡是我用來記錄我所學，關於競程的筆記部落格！<br>內容可能包含:</p><ul><li>前端工程</li><li>C++解題過程&#x2F;語法</li><li>基礎演算法</li><li>資料結構<br>…等 競程中常使用到的相關東西！</li></ul><p> <strong>這裡是用Hexo前端技術架設!</strong></p><h2 id="hexo框架特點"><a href="#hexo框架特點" class="headerlink" title="hexo框架特點:"></a>hexo框架特點:</h2><ul><li>你可以使用MARKDOWN 語法來寫!</li></ul><ul><li>編輯快速 使用node.js</li><li>可以與Github Pages heroku…等 部屬網站。</li><li>豐富的外掛系統</li></ul><h4 id="之後我會在這邊發布一些我競程學習的東西-也歡迎大家一起交流"><a href="#之後我會在這邊發布一些我競程學習的東西-也歡迎大家一起交流" class="headerlink" title="之後我會在這邊發布一些我競程學習的東西~ 也歡迎大家一起交流"></a>之後我會在這邊發布一些我競程學習的東西~ 也歡迎大家一起交流</h4><h2 id="其他頁面"><a href="#其他頁面" class="headerlink" title="其他頁面:"></a>其他頁面:</h2><p><strong>你可以按上面的按鈕導航(手機則為</strong> <em>三條線</em> <strong>)，看看一些不一樣的東西</strong></p>]]></content>
     
     
     <summary type="html">第一篇文章...(點擊查看更多)</summary>
