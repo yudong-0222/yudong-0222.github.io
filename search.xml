@@ -23,187 +23,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Return - 部落格更新</title>
-    <url>/post/blogUpdate.html</url>
-    <content><![CDATA[<h2 id="Blog-Updated"><a href="#Blog-Updated" class="headerlink" title="Blog Updated!"></a>Blog Updated!</h2><p>部落格更新ㄌ</p>
-<p>話說我真的很久沒碰這東西，連怎麼開啟localhost都忘記了@@<br>不過既然我現在找回怎麼使用了，就可以繼續編寫文章ㄌ :D</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>巢狀迴圈－三角形繪製１</title>
-    <url>/post/cpp.html</url>
-    <content><![CDATA[<h1 id="巢狀迴圈"><a href="#巢狀迴圈" class="headerlink" title="巢狀迴圈"></a>巢狀迴圈</h1><p><strong>巢狀迴圈</strong>  迴圈包覆著迴圈。</p>
-<p>在解題時，我會將想法先列出來 再一個一個去假設變數..or loop 等等。 </p>
-<h2 id="範例題目"><a href="#範例題目" class="headerlink" title="範例題目:"></a><em>範例題目:</em></h2><p><strong>範例輸入</strong></p>
-<blockquote>
-<p> 5  </p>
-</blockquote>
-<p><strong>範例輸出</strong></p>
-<blockquote>
-<p>$<br>$$<br>$$$<br>$$$$<br>$$$$$</p>
-</blockquote>
-<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法:"></a>思考方法:</h2><ol>
-<li>要做幾次 ?</li>
-<li>要輸出幾個 <strong>$</strong> ?</li>
-<li>最後再輸出換行 “\n”</li>
-</ol>
-<h1 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h1><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="type">int</span> i,j;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;n;i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (j=<span class="number">0</span>;j&lt;i;j++) &#123;</span><br><span class="line">			cout &lt;&lt; <span class="string">&quot;$&quot;</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-]]></content>
-      <categories>
-        <category>競程筆記</category>
-      </categories>
-      <tags>
-        <tag>code</tag>
-        <tag>競程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>巢狀迴圈－三角形繪製２</title>
-    <url>/post/cpp3.html</url>
-    <content><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目:"></a>題目:</h1><h4 id="出處：SA-流-C-競程修練心法"><a href="#出處：SA-流-C-競程修練心法" class="headerlink" title="出處：SA 流 C++ 競程修練心法"></a>出處：<a class="link"   href="https://hackmd.io/@sa072686/cp/%2F%40sa072686%2FrJpY0i7PS" >SA 流 C++ 競程修練心法 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/tanco.png"
-                     
-                ></p>
-<h2 id="思考方法："><a href="#思考方法：" class="headerlink" title="思考方法："></a>思考方法：</h2><p>我先以 <code>輸出3個#</code> 為例子，下去推想。</p>
-<blockquote>
-<p>輸出 1 個 #<br>輸出 2 個 #<br>輸出 3 個 #<br>輸出 2 個 #<br>輸出 1 個 #</p>
-</blockquote>
-<p>分成 <code>兩層來輸出</code> 的話 則：</p>
-<h4 id="第一層"><a href="#第一層" class="headerlink" title="第一層"></a>第一層</h4><blockquote>
-<p>輸出 １ 個 #<br>輸出 ２ 個 #<br>輸出 ３ 個 #</p>
-</blockquote>
-<h4 id="第二層"><a href="#第二層" class="headerlink" title="第二層"></a>第二層</h4><blockquote>
-<p>輸出 ２ 個 #<br>輸出 １ 個 #</p>
-</blockquote>
-<h4 id="再來假設環節，"><a href="#再來假設環節，" class="headerlink" title="再來假設環節，"></a>再來假設環節，</h4><p>要做n次，所以 <code>第一層的迴圈</code> 即為 <strong>遞增</strong>：</p>
-<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=n;i++&gt;) &#123;</span><br><span class="line">    <span class="comment">//進來迴圈 → 輸出i個 # → 輸出換行</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p>再來，是 # 的部分<br>所以：</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;i;j++&gt;) &#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<h4 id="合體，第一層就完成了！"><a href="#合體，第一層就完成了！" class="headerlink" title="合體，第一層就完成了！"></a>合體，第一層就完成了！</h4><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=n;i++&gt;) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j=<span class="number">0</span>;j&lt;i;j++&gt;) &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>而當我們達到 <code>輸出 n 次</code> 的 # 時<br>我們要倒回去 ， 即為 <strong>遞減</strong></p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=n;i&gt;<span class="number">0</span>;i--) &#123;</span><br><span class="line">    <span class="comment">// 進入迴圈 → 輸出(n-1)個 → 輸出換行</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>接著處理 <code>輸出 (n-1) 個 #</code></p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (j=<span class="number">0</span>;j&lt;i;j++&gt;) &#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h4 id="合體！"><a href="#合體！" class="headerlink" title="合體！"></a>合體！</h4><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=n;i&gt;<span class="number">0</span>;i--) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j=<span class="number">0</span>;j&lt;i;j++&gt;) &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="將第一層與第二層合併"><a href="#將第一層與第二層合併" class="headerlink" title="將第一層與第二層合併"></a>將第一層與第二層合併</h3><h2 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h2><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n;</span><br><span class="line">  <span class="type">int</span> i, j;</span><br><span class="line">  cin &gt;&gt; n;</span><br><span class="line">  <span class="keyword">for</span> (i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; ij; j++) &#123;</span><br><span class="line">      cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (i = n; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; i; j++) &#123;</span><br><span class="line">      cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="解題心得"><a href="#解題心得" class="headerlink" title="解題心得"></a>解題心得</h2><ul>
-<li>我剛開始解這題，一直把它侷限在用一個大迴圈包數個小迴圈的巢狀結構去解。沒想到換個思路後，解起來比較輕鬆。<br>不要太過於執著一把幹到底</li>
-<li>對於<code>巢狀迴圈</code>有更多的了解了！</li>
-<li>我解題會把迴圈拆的一個步驟一個迴圈去想，一次處裡多個迴圈我腦子會炸！</li>
-</ul>
-]]></content>
-      <categories>
-        <category>競程筆記</category>
-      </categories>
-      <tags>
-        <tag>競程</tag>
-        <tag>題解</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TOJ 104 星星樹</title>
-    <url>/post/cpp2.html</url>
-    <content><![CDATA[<h1 id="toj-104-星星樹"><a href="#toj-104-星星樹" class="headerlink" title="toj 104 星星樹"></a>toj 104 星星樹</h1><p><a class="link"   href="https://toj.tfcis.org/oj/pro/104/" >星星樹 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 是這次我要練習的題目。<br>與巢狀迴圈有關。</p>
-<h2 id="題目"><a href="#題目" class="headerlink" title="題目:"></a>題目:</h2><p>大家都知道，星星是長在樹上的。星星樹，自然就是上面長了星星的樹。</p>
-<p>園丁JD3工作是專門維護長在資訊社社部的星星樹。工作包括每天澆水，拔雜草，防治蟲害（DEBUG）等等。當然，還有把星星樹定期修剪成整齊的形狀。</p>
-<p>星星樹的樹枝發展相當有規律，呈現層狀。一棵好看的星星樹並且從樹的底端開始，往上呈現整齊的圓錐狀。為了保持穩定不傾倒，每一層的星星會修剪的比下面一層少正好兩顆。星星樹最頂端，則總是最閃亮的，那一顆的星星。</p>
-<blockquote>
-<p>輸入說明</p>
-</blockquote>
-<p><code>一個數字N，代表星星樹的高度。</code></p>
-<blockquote>
-<p>輸出說明</p>
-</blockquote>
-<p><code>星星樹。</code></p>
-<blockquote>
-<p>範例輸入</p>
-</blockquote>
-<p><code>4</code></p>
-<blockquote>
-<p>範例輸出</p>
-</blockquote>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line">   *</span><br><span class="line">  ***</span><br><span class="line"> *****</span><br><span class="line">*******</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法"></a>思考方法</h2><p>首先，我將發生的事情寫下來，設了兩個變數: wall, space</p>
-<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line">// 0 space 7 #</span><br><span class="line">// 1 space 5 #</span><br><span class="line">// 2 space 3 #</span><br><span class="line">// 3 space 1 #</span><br><span class="line"></span><br><span class="line">// space wall</span><br></pre></td></tr></table></figure></div>
-<p>再來，利用迴圈完成。<br>大概就出來了。</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n;</span><br><span class="line">  cin &gt;&gt; n;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123; <span class="comment">//大迴圈: 次數</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> space = <span class="number">1</span>; space &lt; n-i; space++) &#123; <span class="comment">//空白處理迴圈- </span></span><br><span class="line">    <span class="comment">//空白由上往下遞減.</span></span><br><span class="line">      cout &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> wall = <span class="number">0</span>; wall &lt; <span class="number">2</span>*i+<span class="number">1</span>; wall++) &#123; <span class="comment">//2*i+1 為奇數</span></span><br><span class="line">      cout &lt;&lt; <span class="string">&quot;*&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>競程筆記</category>
-      </categories>
-      <tags>
-        <tag>競程</tag>
-        <tag>題解</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Kattis-Prva</title>
-    <url>/post/cpp4.html</url>
-    <content><![CDATA[<h1 id="題目-Kattis-Prva"><a href="#題目-Kattis-Prva" class="headerlink" title="題目: Kattis - Prva"></a>題目: Kattis - Prva</h1><p>出處: (<a class="link" href="https://open.kattis.com/problems/prva">https://open.kattis.com/problems/prva <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>)</p>
-<p>有 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="6.11ex" height="1.136ex" role="img" focusable="false" viewBox="0 -491 2700.4 502"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(822.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mi" transform="translate(1822.4,0)"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container> 個格子，每個格子有些是字有些是# (代表被阻擋)。<br>我們要以 <em>一行</em> 或以 <em>一列</em> 去搜尋最短字詞(2個字)。</p>
-<h2 id="解題方法"><a href="#解題方法" class="headerlink" title="解題方法:"></a>解題方法:</h2><p>輸入 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="6.11ex" height="1.136ex" role="img" focusable="false" viewBox="0 -491 2700.4 502"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(822.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mi" transform="translate(1822.4,0)"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container> 之後，我先找 <em>一列</em>，再找 <em>一行</em>。<br>我們需要一個 <em>字串s</em>，存放我們要找的東西。</p>
-<p>大概如下:</p>
-<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"iostream"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">  <span class="type">int</span> n,m;</span><br><span class="line">  string s[<span class="number">25</span>];</span><br><span class="line">  cin &gt;&gt; n &gt;&gt;m;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    cin &gt;&gt; s[i];</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-
-<p>然後先從 <em>一列</em> 開始搜尋。<br>找 <strong>如果不是#的</strong><br>因為這樣，我們需要兩個字串</p>
-<ol>
-<li>答案 ans</li>
-<li>臨時字串 temp</li>
-</ol>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"iostream"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">  <span class="type">int</span> n,m;</span><br><span class="line">  string s[<span class="number">25</span>];</span><br><span class="line">  cin &gt;&gt; n &gt;&gt;m;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    cin &gt;&gt; s[i];</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line"><span class="comment">//接續上</span></span><br><span class="line">  string ans=<span class="string">""</span>,temp = <span class="string">""</span>;</span><br><span class="line">   <span class="comment">//跟ans一樣初始化 (空字串)。</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    temp = <span class="string">""</span>; <span class="comment">//迴圈要初始化，不然他不會清空。你可以選擇放在迴圈裡初始化就好`</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;m;j++) {</span><br><span class="line">      <span class="keyword">if</span>(s[i][j] != <span class="string">'#'</span>) {</span><br><span class="line">        temp = temp + s[i][j];</span><br><span class="line">        <span class="keyword">continue</span>; </span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-
-<p>接下來判斷temp是否有 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="5.28ex" height="1.692ex" role="img" focusable="false" viewBox="0 -666 2333.8 748"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><g data-mml-node="text"><path data-c="3E" d="M84 520Q84 528 88 533T96 539L99 540Q106 540 253 471T544 334L687 265Q694 260 694 250T687 235Q685 233 395 96L107 -40H101Q83 -38 83 -20Q83 -19 83 -17Q82 -10 98 -1Q117 9 248 71Q326 108 378 132L626 250L378 368Q90 504 86 509Q84 513 84 520Z"></path></g><g data-mml-node="text" transform="translate(778,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g></g><g data-mml-node="mn" transform="translate(1833.8,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container> 否則他不是一個字<br>如果有再判斷ans是否為空的<br>如果是，就令ans = temp<br>不是的話 比較ans 與 temp中<br>ans是否有比temp長<br>如果有，則另ans = temp<br>如果沒有 ，初始化temp<br>出迴圈，再做一次判斷的部分</p>
-<p>具體做法如下:</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"iostream"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">  <span class="type">int</span> n,m;</span><br><span class="line">  string s[<span class="number">25</span>];</span><br><span class="line">  cin &gt;&gt; n &gt;&gt;m;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    cin &gt;&gt; s[i];</span><br><span class="line">  }</span><br><span class="line">  string ans=<span class="string">""</span>,temp = <span class="string">""</span>;</span><br><span class="line">   <span class="comment">//跟ans一樣初始化 (空字串)。</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    temp = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;m;j++) {</span><br><span class="line">      <span class="keyword">if</span>(s[i][j] != <span class="string">'#'</span>) {</span><br><span class="line">        temp = temp + s[i][j];</span><br><span class="line">        <span class="keyword">continue</span>; </span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;=<span class="number">2</span>) {</span><br><span class="line">        <span class="keyword">if</span>(ans == <span class="string">""</span> ) {</span><br><span class="line">          ans =temp;</span><br><span class="line">          temp = <span class="string">""</span>;</span><br><span class="line">          <span class="keyword">continue</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(ans &gt; temp) ans = temp;</span><br><span class="line">      }</span><br><span class="line">    } <span class="comment">//出迴圈</span></span><br><span class="line">    <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;=<span class="number">2</span> ){</span><br><span class="line">      <span class="keyword">if</span>(ans == <span class="string">""</span>) {</span><br><span class="line">        ans = temp;</span><br><span class="line">        temp = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span> (ans &gt; temp) ans = temp;</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-
-<p>最後一步: 找 <em>一行</em> 的部分。<br>與列同理，只是將 <code>for迴圈的i j 調轉過來</code></p>
-<p>完整code:</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"iostream"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">  <span class="type">int</span> n,m;</span><br><span class="line">  cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">  string s[<span class="number">25</span>];</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    cin &gt;&gt; s[i];</span><br><span class="line">  }</span><br><span class="line">  string temp,ans=<span class="string">""</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    temp = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;m;j++) {</span><br><span class="line">      <span class="keyword">if</span>(s[i][j] != <span class="string">'#'</span>) {</span><br><span class="line">        temp = temp + s[i][j];</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;=<span class="number">2</span>) {</span><br><span class="line">        <span class="keyword">if</span>(ans == <span class="string">""</span>) {</span><br><span class="line">          ans = temp;</span><br><span class="line">          temp = <span class="string">""</span>;</span><br><span class="line">          <span class="keyword">continue</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(ans &gt; temp) ans = temp;</span><br><span class="line">      }</span><br><span class="line">      temp = <span class="string">""</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;= <span class="number">2</span>) {</span><br><span class="line">      <span class="keyword">if</span>(ans == <span class="string">""</span>) {</span><br><span class="line">        ans = temp;</span><br><span class="line">        temp = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span>(ans &gt; temp ) ans = temp;</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">  <span class="comment">//行</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;m;j++) {</span><br><span class="line">    string temp = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">      <span class="keyword">if</span>(s[i][j] != <span class="string">'#'</span>) {</span><br><span class="line">        temp = temp + s[i][j];</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;=<span class="number">2</span>) {</span><br><span class="line">        <span class="keyword">if</span>(ans ==<span class="string">""</span>) {</span><br><span class="line">          ans = temp;</span><br><span class="line">          temp = <span class="string">""</span>;</span><br><span class="line">          <span class="keyword">continue</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(ans &gt; temp) ans = temp;</span><br><span class="line">      }</span><br><span class="line">      temp = <span class="string">""</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;=<span class="number">2</span>) {</span><br><span class="line">      <span class="keyword">if</span>(ans ==<span class="string">""</span>) {</span><br><span class="line">        ans = temp;</span><br><span class="line">        temp = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span>(ans &gt; temp ) ans = temp;</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
-
-<p><code>註:</code></p>
-<ul>
-<li>continue是為了讓temp繼續收集字，不然只有一個字的話就不會進去下面的判斷。</li>
-<li>注意出迴圈的部分。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>競程筆記</category>
-      </categories>
-      <tags>
-        <tag>競程</tag>
-        <tag>題解</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>南大附中資訊研究社 － 創辦計畫</title>
-    <url>/post/tntcsh_csirc.html</url>
-    <content><![CDATA[<h1 id="社團創辦計畫"><a href="#社團創辦計畫" class="headerlink" title="社團創辦計畫"></a>社團創辦計畫</h1><p>鑒於南大附中真的對於資訊這方面沒有甚麼培訓之類的。<br>我將要在這創建一個社團，讓資訊種子在南大附中開花<br>南大附中資訊社。</p>
-<h2 id="社團所有連結"><a href="#社團所有連結" class="headerlink" title="社團所有連結"></a><a class="link"   href="https://ashsnutncsirc.vercel.app/link" >社團所有連結 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h2><h2 id="社團已經進入正式連署階段"><a href="#社團已經進入正式連署階段" class="headerlink" title="社團已經進入正式連署階段!!!"></a>社團已經進入正式連署階段!!!</h2><ul>
-<li><p>南大附中的校內學生 可以透過 <a class="link"   href="https://docs.google.com/forms/d/e/1FAIpQLSfZPJO97Ft946LkNe0Qv1wI_GOFr46RZ4tT5ZVg897O45S4XQ/viewform?usp=send_form" >連署表單 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 加入<br>這樣的話你開學就不用選社團了唷!!</p>
-</li>
-<li><p>校外的學生 如果想支持我們 則可以透過 <strong>分享的方式</strong> 讓更多人知道我們!</p>
-</li>
-</ul>
-<h2 id="更多內容-都在HackMD"><a href="#更多內容-都在HackMD" class="headerlink" title="更多內容? 都在HackMD"></a>更多內容? 都在HackMD</h2><ul>
-<li>HackMD - <a class="link"   href="https://hackmd.io/@YuDong/ashsnutn_csirc" >點擊此處 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>我們設置了一個<a class="link"   href="https://ashsnutncsirc.vercel.app/link" >連結樹 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 你可以透過這個連到與我們有關的任何地方!</li>
-</ul>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>社團</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AtCoder ABC-305 心得</title>
     <url>/post/ABC305.html</url>
     <content><![CDATA[<h1 id="AtCoder-ABC-305"><a href="#AtCoder-ABC-305" class="headerlink" title="AtCoder ABC-305"></a>AtCoder ABC-305</h1><p>這是我第一次在AtCoder解題，老實說這不是我第一次參加XD，但第一場Register之後就忘記時間上去寫😥<br>不過這一次我有記得x) 晚了大概半小時左右<br>但我還是把我會解的都解一解了QQ<br>我的能力現在只會兩題</p>
@@ -265,8 +84,217 @@
         <category>競程筆記</category>
       </categories>
       <tags>
-        <tag>競程</tag>
         <tag>AtCoder</tag>
+        <tag>競程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>南大附中資訊研究社 第一次社課心得</title>
+    <url>/post/NFIRC_1st.html</url>
+    <content><![CDATA[<h1 id="南大附中資研社-第一次社課"><a href="#南大附中資研社-第一次社課" class="headerlink" title="南大附中資研社 第一次社課"></a>南大附中資研社 第一次社課</h1><p>說真的，直到走進社團教室後，我才真正感受到：我做到了，<strong>我們</strong>做到了。</p>
+<p>教室也幾乎坐滿，資研社這次滿招 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 1000 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 人，非常有成就感。</p>
+<p>可能是有一群老友，壯起了膽子，第一次社課的效果做好做滿。<br>本來就是不希望社課太過沉重，希望大家放開來，chill 一點，然後在歡樂的氣氛中學到東西。</p>
+<p>然後正宗在自我介紹的時候，講了一段話令我印象深刻：</p>
+<blockquote>
+<p>畢竟這是有點學術的東西，可能在學習的過程中遇到困難了、學累了，<br>而創立這個社團的用意與目的就是在告訴你，身旁是有一群夥伴一起學習的。</p>
+</blockquote>
+<p>這句話真的非常震撼，一群人走絕對比形單影隻的飛翔還要來的遠<br>創立社團的初衷也是如此，一群志同道合一起學習與成長</p>
+<p>而第一次社課的內容，就是完整的介紹整個社團<br>因為是第一屆，沒有前車之鑑，所以希望各位社員都能夠了解社團在做什麼、在學什麼</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://i.imgur.com/JptPphO.jpg" alt="c"></p>
+<p><em>(這是在等社員到齊時講幹話的圖片，我記得我說有要帶主機的自己搬去後面接螢幕。)</em></p>
+<h2 id="自我介紹"><a href="#自我介紹" class="headerlink" title="自我介紹"></a>自我介紹</h2><p>這裡我大燒雞，不知道為甚麼突然變得很緊張<br><del>可能是北極熊冷氣太冷</del></p>
+<h2 id="介紹一些有關於競程的部分"><a href="#介紹一些有關於競程的部分" class="headerlink" title="介紹一些有關於競程的部分"></a>介紹一些有關於競程的部分</h2><p>跟各位社員介紹一些高中生值得一試的競賽<br><img lazyload="" src="/images/loading.svg" data-src="https://i.imgur.com/czQ1w4M.jpg" alt="c"></p>
+<h2 id="背後工作"><a href="#背後工作" class="headerlink" title="背後工作"></a>背後工作</h2><p>在第一次社課前，真的做了非常的功課跟努力<br>希望打造一個優良的學習環境還有讓各位社員可以放鬆心情的學習、討論、交流</p>
+<h2 id="問卷調查結果"><a href="#問卷調查結果" class="headerlink" title="問卷調查結果"></a>問卷調查結果</h2><p>說實話蠻意外的沒有人炮我的語速過快、斷點太少<br>這是我自己的習慣導致，正宗很敏銳的在課後會議中就告訴我<br>這對我非常重要，因為不管事以後的上台報告、授課，再到更長遠的面試<br>不管你腦袋裡面想的是多麼飛速，台下沒有聽懂也等於你什麼都沒說<br>這是我未來要改進的課題<br>我也會在每次有機會上台報告的時候，盡量控制自己的速度，希望達成一個最頂的平衡</p>
+<h2 id="結尾"><a href="#結尾" class="headerlink" title="結尾"></a>結尾</h2><p>總之 這次社課真的大成功~<br>很感激社員們都非常認真地聽課、給予高評價的回應🍟</p>
+]]></content>
+      <categories>
+        <category>社課心得</category>
+      </categories>
+      <tags>
+        <tag>NFIRC</tag>
+        <tag>社團</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Return - 部落格更新</title>
+    <url>/post/blogUpdate.html</url>
+    <content><![CDATA[<h2 id="Blog-Updated"><a href="#Blog-Updated" class="headerlink" title="Blog Updated!"></a>Blog Updated!</h2><p>部落格更新ㄌ</p>
+<p>話說我真的很久沒碰這東西，連怎麼開啟localhost都忘記了@@<br>不過既然我現在找回怎麼使用了，就可以繼續編寫文章ㄌ :D</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>TOJ 104 星星樹</title>
+    <url>/post/cpp2.html</url>
+    <content><![CDATA[<h1 id="toj-104-星星樹"><a href="#toj-104-星星樹" class="headerlink" title="toj 104 星星樹"></a>toj 104 星星樹</h1><p><a class="link"   href="https://toj.tfcis.org/oj/pro/104/" >星星樹 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 是這次我要練習的題目。<br>與巢狀迴圈有關。</p>
+<h2 id="題目"><a href="#題目" class="headerlink" title="題目:"></a>題目:</h2><p>大家都知道，星星是長在樹上的。星星樹，自然就是上面長了星星的樹。</p>
+<p>園丁JD3工作是專門維護長在資訊社社部的星星樹。工作包括每天澆水，拔雜草，防治蟲害（DEBUG）等等。當然，還有把星星樹定期修剪成整齊的形狀。</p>
+<p>星星樹的樹枝發展相當有規律，呈現層狀。一棵好看的星星樹並且從樹的底端開始，往上呈現整齊的圓錐狀。為了保持穩定不傾倒，每一層的星星會修剪的比下面一層少正好兩顆。星星樹最頂端，則總是最閃亮的，那一顆的星星。</p>
+<blockquote>
+<p>輸入說明</p>
+</blockquote>
+<p><code>一個數字N，代表星星樹的高度。</code></p>
+<blockquote>
+<p>輸出說明</p>
+</blockquote>
+<p><code>星星樹。</code></p>
+<blockquote>
+<p>範例輸入</p>
+</blockquote>
+<p><code>4</code></p>
+<blockquote>
+<p>範例輸出</p>
+</blockquote>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line">   *</span><br><span class="line">  ***</span><br><span class="line"> *****</span><br><span class="line">*******</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法"></a>思考方法</h2><p>首先，我將發生的事情寫下來，設了兩個變數: wall, space</p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line">// 0 space 7 #</span><br><span class="line">// 1 space 5 #</span><br><span class="line">// 2 space 3 #</span><br><span class="line">// 3 space 1 #</span><br><span class="line"></span><br><span class="line">// space wall</span><br></pre></td></tr></table></figure></div>
+<p>再來，利用迴圈完成。<br>大概就出來了。</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n;</span><br><span class="line">  cin &gt;&gt; n;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123; <span class="comment">//大迴圈: 次數</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> space = <span class="number">1</span>; space &lt; n-i; space++) &#123; <span class="comment">//空白處理迴圈- </span></span><br><span class="line">    <span class="comment">//空白由上往下遞減.</span></span><br><span class="line">      cout &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> wall = <span class="number">0</span>; wall &lt; <span class="number">2</span>*i+<span class="number">1</span>; wall++) &#123; <span class="comment">//2*i+1 為奇數</span></span><br><span class="line">      cout &lt;&lt; <span class="string">&quot;*&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>競程筆記</category>
+      </categories>
+      <tags>
+        <tag>競程</tag>
+        <tag>題解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>巢狀迴圈－三角形繪製２</title>
+    <url>/post/cpp3.html</url>
+    <content><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目:"></a>題目:</h1><h4 id="出處：SA-流-C-競程修練心法"><a href="#出處：SA-流-C-競程修練心法" class="headerlink" title="出處：SA 流 C++ 競程修練心法"></a>出處：<a class="link"   href="https://hackmd.io/@sa072686/cp/%2F%40sa072686%2FrJpY0i7PS" >SA 流 C++ 競程修練心法 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/tanco.png"
+                     
+                ></p>
+<h2 id="思考方法："><a href="#思考方法：" class="headerlink" title="思考方法："></a>思考方法：</h2><p>我先以 <code>輸出3個#</code> 為例子，下去推想。</p>
+<blockquote>
+<p>輸出 1 個 #<br>輸出 2 個 #<br>輸出 3 個 #<br>輸出 2 個 #<br>輸出 1 個 #</p>
+</blockquote>
+<p>分成 <code>兩層來輸出</code> 的話 則：</p>
+<h4 id="第一層"><a href="#第一層" class="headerlink" title="第一層"></a>第一層</h4><blockquote>
+<p>輸出 １ 個 #<br>輸出 ２ 個 #<br>輸出 ３ 個 #</p>
+</blockquote>
+<h4 id="第二層"><a href="#第二層" class="headerlink" title="第二層"></a>第二層</h4><blockquote>
+<p>輸出 ２ 個 #<br>輸出 １ 個 #</p>
+</blockquote>
+<h4 id="再來假設環節，"><a href="#再來假設環節，" class="headerlink" title="再來假設環節，"></a>再來假設環節，</h4><p>要做n次，所以 <code>第一層的迴圈</code> 即為 <strong>遞增</strong>：</p>
+<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=n;i++&gt;) &#123;</span><br><span class="line">    <span class="comment">//進來迴圈 → 輸出i個 # → 輸出換行</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>再來，是 # 的部分<br>所以：</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;i;j++&gt;) &#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h4 id="合體，第一層就完成了！"><a href="#合體，第一層就完成了！" class="headerlink" title="合體，第一層就完成了！"></a>合體，第一層就完成了！</h4><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=n;i++&gt;) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j=<span class="number">0</span>;j&lt;i;j++&gt;) &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>而當我們達到 <code>輸出 n 次</code> 的 # 時<br>我們要倒回去 ， 即為 <strong>遞減</strong></p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=n;i&gt;<span class="number">0</span>;i--) &#123;</span><br><span class="line">    <span class="comment">// 進入迴圈 → 輸出(n-1)個 → 輸出換行</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>接著處理 <code>輸出 (n-1) 個 #</code></p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (j=<span class="number">0</span>;j&lt;i;j++&gt;) &#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="合體！"><a href="#合體！" class="headerlink" title="合體！"></a>合體！</h4><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=n;i&gt;<span class="number">0</span>;i--) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j=<span class="number">0</span>;j&lt;i;j++&gt;) &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="將第一層與第二層合併"><a href="#將第一層與第二層合併" class="headerlink" title="將第一層與第二層合併"></a>將第一層與第二層合併</h3><h2 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h2><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n;</span><br><span class="line">  <span class="type">int</span> i, j;</span><br><span class="line">  cin &gt;&gt; n;</span><br><span class="line">  <span class="keyword">for</span> (i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; ij; j++) &#123;</span><br><span class="line">      cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (i = n; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; i; j++) &#123;</span><br><span class="line">      cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="解題心得"><a href="#解題心得" class="headerlink" title="解題心得"></a>解題心得</h2><ul>
+<li>我剛開始解這題，一直把它侷限在用一個大迴圈包數個小迴圈的巢狀結構去解。沒想到換個思路後，解起來比較輕鬆。<br>不要太過於執著一把幹到底</li>
+<li>對於<code>巢狀迴圈</code>有更多的了解了！</li>
+<li>我解題會把迴圈拆的一個步驟一個迴圈去想，一次處裡多個迴圈我腦子會炸！</li>
+</ul>
+]]></content>
+      <categories>
+        <category>競程筆記</category>
+      </categories>
+      <tags>
+        <tag>競程</tag>
+        <tag>題解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Kattis-Prva</title>
+    <url>/post/cpp4.html</url>
+    <content><![CDATA[<h1 id="題目-Kattis-Prva"><a href="#題目-Kattis-Prva" class="headerlink" title="題目: Kattis - Prva"></a>題目: Kattis - Prva</h1><p>出處: (<a class="link" href="https://open.kattis.com/problems/prva">https://open.kattis.com/problems/prva <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>)</p>
+<p>有 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="6.11ex" height="1.136ex" role="img" focusable="false" viewBox="0 -491 2700.4 502"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(822.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mi" transform="translate(1822.4,0)"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container> 個格子，每個格子有些是字有些是# (代表被阻擋)。<br>我們要以 <em>一行</em> 或以 <em>一列</em> 去搜尋最短字詞(2個字)。</p>
+<h2 id="解題方法"><a href="#解題方法" class="headerlink" title="解題方法:"></a>解題方法:</h2><p>輸入 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="6.11ex" height="1.136ex" role="img" focusable="false" viewBox="0 -491 2700.4 502"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(822.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mi" transform="translate(1822.4,0)"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container> 之後，我先找 <em>一列</em>，再找 <em>一行</em>。<br>我們需要一個 <em>字串s</em>，存放我們要找的東西。</p>
+<p>大概如下:</p>
+<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"iostream"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">  <span class="type">int</span> n,m;</span><br><span class="line">  string s[<span class="number">25</span>];</span><br><span class="line">  cin &gt;&gt; n &gt;&gt;m;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    cin &gt;&gt; s[i];</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p>然後先從 <em>一列</em> 開始搜尋。<br>找 <strong>如果不是#的</strong><br>因為這樣，我們需要兩個字串</p>
+<ol>
+<li>答案 ans</li>
+<li>臨時字串 temp</li>
+</ol>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"iostream"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">  <span class="type">int</span> n,m;</span><br><span class="line">  string s[<span class="number">25</span>];</span><br><span class="line">  cin &gt;&gt; n &gt;&gt;m;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    cin &gt;&gt; s[i];</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line"><span class="comment">//接續上</span></span><br><span class="line">  string ans=<span class="string">""</span>,temp = <span class="string">""</span>;</span><br><span class="line">   <span class="comment">//跟ans一樣初始化 (空字串)。</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    temp = <span class="string">""</span>; <span class="comment">//迴圈要初始化，不然他不會清空。你可以選擇放在迴圈裡初始化就好`</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;m;j++) {</span><br><span class="line">      <span class="keyword">if</span>(s[i][j] != <span class="string">'#'</span>) {</span><br><span class="line">        temp = temp + s[i][j];</span><br><span class="line">        <span class="keyword">continue</span>; </span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p>接下來判斷temp是否有 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="5.28ex" height="1.692ex" role="img" focusable="false" viewBox="0 -666 2333.8 748"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><g data-mml-node="text"><path data-c="3E" d="M84 520Q84 528 88 533T96 539L99 540Q106 540 253 471T544 334L687 265Q694 260 694 250T687 235Q685 233 395 96L107 -40H101Q83 -38 83 -20Q83 -19 83 -17Q82 -10 98 -1Q117 9 248 71Q326 108 378 132L626 250L378 368Q90 504 86 509Q84 513 84 520Z"></path></g><g data-mml-node="text" transform="translate(778,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g></g><g data-mml-node="mn" transform="translate(1833.8,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container> 否則他不是一個字<br>如果有再判斷ans是否為空的<br>如果是，就令ans = temp<br>不是的話 比較ans 與 temp中<br>ans是否有比temp長<br>如果有，則另ans = temp<br>如果沒有 ，初始化temp<br>出迴圈，再做一次判斷的部分</p>
+<p>具體做法如下:</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"iostream"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">  <span class="type">int</span> n,m;</span><br><span class="line">  string s[<span class="number">25</span>];</span><br><span class="line">  cin &gt;&gt; n &gt;&gt;m;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    cin &gt;&gt; s[i];</span><br><span class="line">  }</span><br><span class="line">  string ans=<span class="string">""</span>,temp = <span class="string">""</span>;</span><br><span class="line">   <span class="comment">//跟ans一樣初始化 (空字串)。</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    temp = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;m;j++) {</span><br><span class="line">      <span class="keyword">if</span>(s[i][j] != <span class="string">'#'</span>) {</span><br><span class="line">        temp = temp + s[i][j];</span><br><span class="line">        <span class="keyword">continue</span>; </span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;=<span class="number">2</span>) {</span><br><span class="line">        <span class="keyword">if</span>(ans == <span class="string">""</span> ) {</span><br><span class="line">          ans =temp;</span><br><span class="line">          temp = <span class="string">""</span>;</span><br><span class="line">          <span class="keyword">continue</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(ans &gt; temp) ans = temp;</span><br><span class="line">      }</span><br><span class="line">    } <span class="comment">//出迴圈</span></span><br><span class="line">    <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;=<span class="number">2</span> ){</span><br><span class="line">      <span class="keyword">if</span>(ans == <span class="string">""</span>) {</span><br><span class="line">        ans = temp;</span><br><span class="line">        temp = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span> (ans &gt; temp) ans = temp;</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p>最後一步: 找 <em>一行</em> 的部分。<br>與列同理，只是將 <code>for迴圈的i j 調轉過來</code></p>
+<p>完整code:</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"iostream"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">  <span class="type">int</span> n,m;</span><br><span class="line">  cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">  string s[<span class="number">25</span>];</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    cin &gt;&gt; s[i];</span><br><span class="line">  }</span><br><span class="line">  string temp,ans=<span class="string">""</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">    temp = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;m;j++) {</span><br><span class="line">      <span class="keyword">if</span>(s[i][j] != <span class="string">'#'</span>) {</span><br><span class="line">        temp = temp + s[i][j];</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;=<span class="number">2</span>) {</span><br><span class="line">        <span class="keyword">if</span>(ans == <span class="string">""</span>) {</span><br><span class="line">          ans = temp;</span><br><span class="line">          temp = <span class="string">""</span>;</span><br><span class="line">          <span class="keyword">continue</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(ans &gt; temp) ans = temp;</span><br><span class="line">      }</span><br><span class="line">      temp = <span class="string">""</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;= <span class="number">2</span>) {</span><br><span class="line">      <span class="keyword">if</span>(ans == <span class="string">""</span>) {</span><br><span class="line">        ans = temp;</span><br><span class="line">        temp = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span>(ans &gt; temp ) ans = temp;</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">  <span class="comment">//行</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;m;j++) {</span><br><span class="line">    string temp = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) {</span><br><span class="line">      <span class="keyword">if</span>(s[i][j] != <span class="string">'#'</span>) {</span><br><span class="line">        temp = temp + s[i][j];</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;=<span class="number">2</span>) {</span><br><span class="line">        <span class="keyword">if</span>(ans ==<span class="string">""</span>) {</span><br><span class="line">          ans = temp;</span><br><span class="line">          temp = <span class="string">""</span>;</span><br><span class="line">          <span class="keyword">continue</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(ans &gt; temp) ans = temp;</span><br><span class="line">      }</span><br><span class="line">      temp = <span class="string">""</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(temp.<span class="built_in">length</span>() &gt;=<span class="number">2</span>) {</span><br><span class="line">      <span class="keyword">if</span>(ans ==<span class="string">""</span>) {</span><br><span class="line">        ans = temp;</span><br><span class="line">        temp = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">if</span>(ans &gt; temp ) ans = temp;</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
+
+<p><code>註:</code></p>
+<ul>
+<li>continue是為了讓temp繼續收集字，不然只有一個字的話就不會進去下面的判斷。</li>
+<li>注意出迴圈的部分。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>競程筆記</category>
+      </categories>
+      <tags>
+        <tag>競程</tag>
+        <tag>題解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>巢狀迴圈－三角形繪製１</title>
+    <url>/post/cpp.html</url>
+    <content><![CDATA[<h1 id="巢狀迴圈"><a href="#巢狀迴圈" class="headerlink" title="巢狀迴圈"></a>巢狀迴圈</h1><p><strong>巢狀迴圈</strong>  迴圈包覆著迴圈。</p>
+<p>在解題時，我會將想法先列出來 再一個一個去假設變數..or loop 等等。 </p>
+<h2 id="範例題目"><a href="#範例題目" class="headerlink" title="範例題目:"></a><em>範例題目:</em></h2><p><strong>範例輸入</strong></p>
+<blockquote>
+<p> 5  </p>
+</blockquote>
+<p><strong>範例輸出</strong></p>
+<blockquote>
+<p>$<br>$$<br>$$$<br>$$$$<br>$$$$$</p>
+</blockquote>
+<h2 id="思考方法"><a href="#思考方法" class="headerlink" title="思考方法:"></a>思考方法:</h2><ol>
+<li>要做幾次 ?</li>
+<li>要輸出幾個 <strong>$</strong> ?</li>
+<li>最後再輸出換行 “\n”</li>
+</ol>
+<h1 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h1><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="type">int</span> i,j;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;n;i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (j=<span class="number">0</span>;j&lt;i;j++) &#123;</span><br><span class="line">			cout &lt;&lt; <span class="string">&quot;$&quot;</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+]]></content>
+      <categories>
+        <category>競程筆記</category>
+      </categories>
+      <tags>
+        <tag>競程</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>南大附中資訊研究社 － 創辦計畫</title>
+    <url>/post/tntcsh_csirc.html</url>
+    <content><![CDATA[<h1 id="社團創辦計畫"><a href="#社團創辦計畫" class="headerlink" title="社團創辦計畫"></a>社團創辦計畫</h1><p>鑒於南大附中真的對於資訊這方面沒有甚麼培訓之類的。<br>我將要在這創建一個社團，讓資訊種子在南大附中開花<br>南大附中資訊社。</p>
+<h2 id="社團所有連結"><a href="#社團所有連結" class="headerlink" title="社團所有連結"></a><a class="link"   href="https://ashsnutncsirc.vercel.app/link" >社團所有連結 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h2><h2 id="社團已經進入正式連署階段"><a href="#社團已經進入正式連署階段" class="headerlink" title="社團已經進入正式連署階段!!!"></a>社團已經進入正式連署階段!!!</h2><ul>
+<li><p>南大附中的校內學生 可以透過 <a class="link"   href="https://docs.google.com/forms/d/e/1FAIpQLSfZPJO97Ft946LkNe0Qv1wI_GOFr46RZ4tT5ZVg897O45S4XQ/viewform?usp=send_form" >連署表單 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 加入<br>這樣的話你開學就不用選社團了唷!!</p>
+</li>
+<li><p>校外的學生 如果想支持我們 則可以透過 <strong>分享的方式</strong> 讓更多人知道我們!</p>
+</li>
+</ul>
+<h2 id="更多內容-都在HackMD"><a href="#更多內容-都在HackMD" class="headerlink" title="更多內容? 都在HackMD"></a>更多內容? 都在HackMD</h2><ul>
+<li>HackMD - <a class="link"   href="https://hackmd.io/@YuDong/ashsnutn_csirc" >點擊此處 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>我們設置了一個<a class="link"   href="https://ashsnutncsirc.vercel.app/link" >連結樹 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 你可以透過這個連到與我們有關的任何地方!</li>
+</ul>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>社團</tag>
       </tags>
   </entry>
 </search>
