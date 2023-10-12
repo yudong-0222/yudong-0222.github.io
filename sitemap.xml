@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yudong-0222.github.io/post/NFIRC_1st</loc>
+    <loc>http://yudong-0222.github.io/about/</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://yudong-0222.github.io/about/</loc>
+    <loc>http://yudong-0222.github.io/post/NFIRC_1st</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -165,14 +165,14 @@
   </url>
   
   <url>
-    <loc>http://yudong-0222.github.io/tags/%E9%A1%8C%E8%A7%A3/</loc>
+    <loc>http://yudong-0222.github.io/tags/code/</loc>
     <lastmod>2023-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yudong-0222.github.io/tags/code/</loc>
+    <loc>http://yudong-0222.github.io/tags/%E9%A1%8C%E8%A7%A3/</loc>
     <lastmod>2023-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
