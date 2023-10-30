@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yudong-0222.github.io/about/</loc>
+    
+    <lastmod>2023-10-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yudong-0222.github.io/post/abc326</loc>
     
     <lastmod>2023-10-30</lastmod>
@@ -14,15 +23,6 @@
     <loc>http://yudong-0222.github.io/post/ABC305</loc>
     
     <lastmod>2023-10-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yudong-0222.github.io/about/</loc>
-    
-    <lastmod>2023-10-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
