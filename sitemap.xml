@@ -146,20 +146,6 @@
 
   
   <url>
-    <loc>http://yudong-0222.github.io/tags/NFIRC/</loc>
-    <lastmod>2023-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yudong-0222.github.io/tags/%E7%A4%BE%E5%9C%98/</loc>
-    <lastmod>2023-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://yudong-0222.github.io/tags/AtCoder/</loc>
     <lastmod>2023-10-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -168,6 +154,20 @@
   
   <url>
     <loc>http://yudong-0222.github.io/tags/%E7%AB%B6%E7%A8%8B/</loc>
+    <lastmod>2023-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yudong-0222.github.io/tags/NFIRC/</loc>
+    <lastmod>2023-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yudong-0222.github.io/tags/%E7%A4%BE%E5%9C%98/</loc>
     <lastmod>2023-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -190,14 +190,14 @@
 
   
   <url>
-    <loc>http://yudong-0222.github.io/categories/%E7%A4%BE%E8%AA%B2%E5%BF%83%E5%BE%97/</loc>
+    <loc>http://yudong-0222.github.io/categories/%E7%AB%B6%E7%A8%8B%E7%AD%86%E8%A8%98/</loc>
     <lastmod>2023-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yudong-0222.github.io/categories/%E7%AB%B6%E7%A8%8B%E7%AD%86%E8%A8%98/</loc>
+    <loc>http://yudong-0222.github.io/categories/%E7%A4%BE%E8%AA%B2%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2023-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
