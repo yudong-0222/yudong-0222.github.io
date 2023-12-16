@@ -4,7 +4,16 @@
   <url>
     <loc>http://yudong-0222.github.io/post/NHSPC112</loc>
     
-    <lastmod>2023-11-03</lastmod>
+    <lastmod>2023-12-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yudong-0222.github.io/about/</loc>
+    
+    <lastmod>2023-12-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -14,15 +23,6 @@
     <loc>http://yudong-0222.github.io/post/NFIRC_1st</loc>
     
     <lastmod>2023-11-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yudong-0222.github.io/about/</loc>
-    
-    <lastmod>2023-10-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
